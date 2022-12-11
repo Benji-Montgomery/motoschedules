@@ -22,6 +22,7 @@ const races = [
         date: [9,3]
     }
 ]
-export default {
+const exportRaces = {
     races, name
 }
+export default exportRaces

@@ -1,8 +1,8 @@
 //import './App.css';
 import React from 'react'
 import { GoogleMap, useJsApiLoader, Marker} from '@react-google-maps/api';
-import {Wrapper, Status } from '@googlemaps/react-wrapper'
-import { useState, useEffect } from 'react'
+//import {Wrapper, Status } from '@googlemaps/react-wrapper'
+//import { useState, useEffect } from 'react'
 import markers from '../components/markers'
 
 //import { Marker } from "@react";
@@ -37,7 +37,7 @@ function MyComponent() {
   })
 
   const [map, setMap] = React.useState(null)
-
+  console.log(map)
 //const onLoad = React.useCallback(function callback(map) {
 //  // This is just an example of getting and using the map instance!!! don't just blindly copy!
 //  const bounds = new window.google.maps.LatLngBounds(center);
