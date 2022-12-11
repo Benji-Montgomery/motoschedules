@@ -66,7 +66,7 @@ function MyComponent() {
 
   return (
     <div>
-      <h1>Super Moto Schedules</h1>
+      <h3>Map with pins of Supermoto / Minimoto racing tracks</h3>
       <MyComponent />
     </div>
   );

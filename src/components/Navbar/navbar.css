@@ -11,3 +11,10 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  a:hover {
+    opacity: 40%;
+  }
+  a{
+    font-weight: 600;
+  }
