@@ -1,0 +1,32 @@
+//     defaultZoom={12}
+//     defaultCenter={{ lat: 37.7749, lng: -122.4194 }}
+//     containerElement={<div style={{ height: '400px' }} />}
+//     mapElement={<div style={{ height: '100%' }} />}
+//   />```
+
+// 4. Within the Map component, add a Marker component for each location you want to display on the map, providing the coordinates for each location:
+
+// ```<Map
+//     defaultZoom={12}
+//     defaultCenter={{ lat: 37.7749, lng: -122.4194 }}
+//     containerElement={<div style={{ height: '400px' }} />}
+//     mapElement={<div style={{ height: '100%' }} />}
+//   >
+//     <Marker position={{ lat: 37.7624, lng: -122.4302 }} />
+//     <Marker position={{ lat: 37.7885, lng: -122.4015 }} />
+//   </Map>```
+
+// 5. Be sure to also include your Google Maps API key in the Map component:
+
+// ```<Map
+//     defaultZoom={12}
+//     defaultCenter={{ lat: 37.7749, lng: -122.4194 }}
+//     containerElement={<div style={{ height: '400px' }} />}
+//     mapElement={<div style={{ height: '100%' }} />}
+//     googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
+//   >
+//     <Marker position={{ lat: 37.7624, lng: -122.4302 }} />
+//     <Marker position={{ lat: 37.7885, lng: -122.4015 }} />
+//   </Map>```
+
+// 6. You can customize the appearance and behavior of the markers by passing additional props to the Marker component, such as the marker label, icon, and onClick event. For more information, see the react-google-maps documentation.
