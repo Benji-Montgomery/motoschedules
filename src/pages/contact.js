@@ -1,9 +1,13 @@
 import React from 'react';
 
 const Contact = () => {
+
+  const addNote = () =>{
+    console.log('hiii')
+  }
 return (
 	<div>
-	<form name="contact" method="POST" data-netlify="true">
+	<form name="contact" onSubmit={addNote} data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
@@ -20,7 +24,7 @@ return (
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button type="submit">Send</button>
+  	<button id="submitButton" type="submit">submit</button>
   </p>
 </form>
 
