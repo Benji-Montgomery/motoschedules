@@ -1,9 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
-
+  const navigate = useNavigate()
   const addNote = () =>{
     console.log('hiii')
+    navigate("/")
   }
 return (
 	<div>
@@ -24,7 +26,7 @@ return (
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-  	<button id="submitButton" type="submit">submit</button>
+  	<button id="submitButton" type="submit" >submit</button>
   </p>
 </form>
 
