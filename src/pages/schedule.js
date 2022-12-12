@@ -1,33 +1,46 @@
 import React from 'react';
 import { useState } from 'react'
 import cascadia from '../components/cascadiaSM'
+import wmrra from '../components/wmrra'
+import './css/schedule.css'
 
 const Schedule = () => {
-	const [schedule, setSchedule] = useState([])
-
+	const race1 = wmrra.races
+	const race2 = cascadia.races
+	const race3 = race1.concat(race2)
+	console.log(race3)
+	const schedule = race3
 
 	const ScheduleButton = ({org}) => {
-
+		const [clicked, setClicked] = useState('true')
+		console.log('current state of clicked outside of function', clicked)
+		//if(clicked === 'false'){
+		//	setSchedule(wmrra.races)
+		//}
+		// false ==== clicked!
 		const scheduleSetter = (event) => {
 			event.preventDefault()
-			console.log(org)
-			setSchedule(org.races)
-			console.log(schedule)
+			if(clicked === 'false'){
+				setClicked('true')
+				console.log('set to true')
+				
+			}else if(clicked === 'true'){		
+				console.log('setting false')
+				setClicked('false')
+			}
 		}
 
 		return(
-			<button onClick={scheduleSetter}>{org.name}</button>
+			<button className={`${clicked}`} onClick={scheduleSetter} >{org.name}</button>
 		)
 	}
 	const Race = (race) => {
-		console.log(race)
 		return(
 			<div>
-				date: {race.race.date[0]},{race.race.date[1]} track: {race.race.track}
+				{race.race.name} date: {race.race.date[0]},{race.race.date[1]} track: {race.race.track}
 			</div>
 		)
 	}
-
 	const ScheduleDisplay = () => {
 		
 		return(
@@ -42,6 +55,7 @@ const Schedule = () => {
 			<div>
 				<p>Select Organizations to display</p>
 				<ScheduleButton org={cascadia} />
+				<ScheduleButton org={wmrra} />
 			</div>
 			<h3>schedule:</h3>
 			<ScheduleDisplay />
@@ -51,3 +65,4 @@ const Schedule = () => {
 };
 
 export default Schedule;
+
