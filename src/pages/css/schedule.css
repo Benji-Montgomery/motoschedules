@@ -4,3 +4,10 @@
 .true{
     background-color: white;
 }
+.lifalse{
+    border: 5px solid black;
+}
+
+.litrue{
+    background-color: black;
+}

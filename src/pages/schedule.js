@@ -31,14 +31,23 @@ const Schedule = () => {
 		}
 
 		return(
-			<button className={`${clicked}`} onClick={scheduleSetter} >{org.name}</button>
+			<div>
+				<button className={`${clicked}`} onClick={scheduleSetter} >{org.name}</button>
+				<section>
+					<ul>
+					{org.races.map(race =>
+						<Race key={Math.random()} race={race} />)}
+					</ul>
+				</section>
+			</div>
+
 		)
 	}
 	const Race = (race) => {
 		return(
-			<div>
+			<li>
 				{race.race.name} date: {race.race.date[0]},{race.race.date[1]} track: {race.race.track}
-			</div>
+			</li>
 		)
 	}
 	const ScheduleDisplay = () => {
