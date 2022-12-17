@@ -9,7 +9,7 @@ const Contact = () => {
   }
 return (
 	<div>
-	<form name="contact" onSubmit={addNote} data-netlify="true">
+	<form name="contact" onSubmit={addNote}>
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
   </p>
