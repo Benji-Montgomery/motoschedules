@@ -1,77 +1,36 @@
-import React from 'react';
-import { useState } from 'react'
-import cascadia from '../components/cascadiaSM'
-import wmrra from '../components/wmrra'
+import { useDispatch, useSelector } from "react-redux"
+import { manageFilter } from "../reducers/filterReducer"
+import Filter from "../components/Filter"
 import './css/schedule.css'
 
 const Schedule = () => {
-	const race1 = wmrra.races
-	const race2 = cascadia.races
-	const race3 = race1.concat(race2)
-	console.log(race3)
-	const schedule = race3
+    const dispatch = useDispatch()
 
-	const ScheduleButton = ({org}) => {
-		const [clicked, setClicked] = useState('true')
-		console.log('current state of clicked outside of function', clicked)
-		//if(clicked === 'false'){
-		//	setSchedule(wmrra.races)
-		//}
-		// false ==== clicked!
-		const scheduleSetter = (event) => {
-			event.preventDefault()
-			if(clicked === 'false'){
-				setClicked('true')
-				console.log('set to true')
-				
-			}else if(clicked === 'true'){		
-				console.log('setting false')
-				setClicked('false')
-			}
-		}
+    const handleFilter = (raceOrg) => {
+        console.log(raceOrg)
+        dispatch(manageFilter(raceOrg))
+    }
+    const currentState = useSelector(state => state)
+    console.log('currentstate', currentState)
+    const buttonStyler = (raceorg) => {
+        if(currentState.filter.includes(raceorg)){
+            return { background: 'aqua' }
+        }
+    }
+    return(
+        <section>
+            <section>
+                <button style={buttonStyler('WMRRA')} onClick={() => handleFilter('WMRRA')}>WMRRA</button>
+                <button style={buttonStyler('CascadiaSM')} onClick={() => handleFilter('CascadiaSM')}>Cascadia SuperMoto</button>
+                <button style={buttonStyler('Puyallup_Flat_Track')} onClick={() => handleFilter('Puyallup_Flat_Track')}>Puyallup Flat Track</button>
+                <button onClick={() => handleFilter()}>CLEAR</button>
+            </section>
+            <section>
+                <Filter />
+            </section>
+        </section>
+    )
+}
 
-		return(
-			<div>
-				<button className={`${clicked}`} onClick={scheduleSetter} >{org.name}</button>
-				<section>
-					<ul>
-					{org.races.map(race =>
-						<Race key={Math.random()} race={race} />)}
-					</ul>
-				</section>
-			</div>
-
-		)
-	}
-	const Race = (race) => {
-		return(
-			<li>
-				{race.race.name} date: {race.race.date[0]},{race.race.date[1]} track: {race.race.track}
-			</li>
-		)
-	}
-	const ScheduleDisplay = () => {
-		
-		return(
-			<div>
-				{schedule.map(race =>
-					<Race key={Math.random()} race={race} />)}
-			</div>
-		)
-	}
-	return (
-		<div>
-			<div>
-				<p>Select Organizations to display</p>
-				<ScheduleButton org={cascadia} />
-				<ScheduleButton org={wmrra} />
-			</div>
-			<h3>schedule:</h3>
-			<ScheduleDisplay />
-
-		</div>
-	);
-};
 
 export default Schedule;
-

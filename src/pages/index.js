@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/index.css'
-import Schedule from './schedule2';
+import Schedule from './schedule';
 
 
 const Home = () => {
@@ -11,8 +11,8 @@ return (
 		</section>
 		<section id="main">
 		<h1>Moto Schedule</h1>
-		<p>This site is currently under construction!</p>
 		<p>It is hard to find all of the motorcycle racing schedules in one place. This is my solution.</p>
+		<p>All dates are 2023</p>
 		<Schedule />
 		</section>
 	</div>

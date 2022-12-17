@@ -1,13 +1,11 @@
 import { useSelector } from "react-redux"
-
 import wmrra from './wmrra'
 import cascadiaSM from './cascadiaSM'
+import puyallup from './puyallup'
 
 const Filter = () => {
     const filtered = useSelector(state => state)
-    let anecdotes = wmrra.races.concat(cascadiaSM.races)
-    console.log('anecdotes', anecdotes)
-    console.log('filtered', filtered)
+    let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(puyallup.races))
     const filterFunction = (x) => {
       for(let i = 0; i < filtered.filter.length; i++){
         if(x.name.includes(filtered.filter[i])){
@@ -16,9 +14,7 @@ const Filter = () => {
       }
     }
     let anecdotesFiltered = anecdotes.filter(filterFunction)
-    //x => x.name.includes(filtered.filter[1])
-    console.log('filtered array', anecdotesFiltered)
-    console.log('sorted', anecdotesFiltered.sort((a, b) => a.sortDate - b.sortDate))
+    anecdotesFiltered.sort((a, b) => a.sortDate - b.sortDate)
 
     const dateFunction = (race) => {
       if(race.date.length === 1){

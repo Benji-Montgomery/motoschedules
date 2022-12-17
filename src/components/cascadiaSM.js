@@ -10,12 +10,14 @@ const races = [
     {
         name: name,
         track: 'Spokane Kart Racing Association',
-        date: ['TBD']
+        date: ['TBD'],
+        sortDate: 1
     },
     {
         name: name,
         track: 'Streets of Sultan',
-        date: ['TBD']
+        date: ['TBD'],
+        sortDate: 1
     },
     {
         name: name,

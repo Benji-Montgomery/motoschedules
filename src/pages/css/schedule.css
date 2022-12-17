@@ -1,13 +1,6 @@
-.false{
-    background-color: aqua
-}
-.true{
-    background-color: white;
-}
-.lifalse{
-    border: 5px solid black;
-}
-
-.litrue{
-    background-color: black;
+button{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;    
 }

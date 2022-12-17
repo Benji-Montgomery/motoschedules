@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = ['MYCLAROVOIANTPANTSAREONFIRE']
+const initialState = ['CascadiaSM']
 
 const filterSlice = createSlice({
     name: 'filter',
