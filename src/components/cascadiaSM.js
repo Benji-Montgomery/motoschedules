@@ -4,7 +4,8 @@ const races = [
     {
         name: name,
         track: 'TCKC' ,
-        date: [6,3]
+        date: [6,3],
+        sortDate: .0603
     },
     {
         name: name,
@@ -19,12 +20,14 @@ const races = [
     {
         name: name,
         track: 'Bremerton',
-        date: [8,13]
+        date: [8,13],
+        sortDate: .0813
     },
     {
         name: name,
         track: 'TCKC',
-        date: [9,3]
+        date: [9,3],
+        sortDate: .0903
     }
 ]
 const exportRaces = {

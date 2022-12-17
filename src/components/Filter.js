@@ -18,6 +18,17 @@ const Filter = () => {
     let anecdotesFiltered = anecdotes.filter(filterFunction)
     //x => x.name.includes(filtered.filter[1])
     console.log('filtered array', anecdotesFiltered)
+    console.log('sorted', anecdotesFiltered.sort((a, b) => a.sortDate - b.sortDate))
+
+    const dateFunction = (race) => {
+      if(race.date.length === 1){
+        return race.date
+      }else if(race.date.length ===2){
+        return `${race.date[0]}/${race.date[1]}`
+      }else if(race.date.length === 3){
+        return `${race.date[0]}/${race.date[1]}-${race.date[2]}`
+      }
+    }
 
     const style = {
       marginBottom: 10
@@ -31,7 +42,7 @@ const Filter = () => {
             {anecdotesFiltered.map(race =>
             <div key={Math.random()}>
               <li>
-                <span> {race.date}</span>
+                <span>{dateFunction(race)}</span>
                 <span> {race.name}</span>
                 <span> {race.track}</span>
               </li>

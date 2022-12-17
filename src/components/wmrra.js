@@ -4,32 +4,38 @@ const races = [
     {
         name: name,
         track: 'PIR' ,
-        date: [5,5,7]
+        date: [5,5,7],
+        sortDate: .0505
     },
     {
         name: name,
         track: 'PIR (chicane)',
-        date: [6,9,11]
+        date: [6,9,11],
+        sortDate: .0609
     },
     {
         name: name,
         track: 'the Ridge',
-        date: [6,16,18]
+        date: [6,16,18],
+        sortDate: .0616
     },
     {
         name: name,
         track: 'PIR (chicane)',
-        date: [7,14,16]
+        date: [7,14,16],
+        sortDate: .0714
     },
     {
         name: name,
         track: 'Pacific',
-        date: [9,1,4]
+        date: [9,1,4],
+        sortDate: .0901
     },
     {
         name: name,
         track: 'the Ridge',
-        date: [9,15,17]
+        date: [9,15,17],
+        sortDate: .0915
     }
 ]
 const exportRaces = {
