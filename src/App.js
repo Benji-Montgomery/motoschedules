@@ -16,7 +16,7 @@ return (
 		<Route exact path='/' element={<Home />} />
 		<Route path='/contact' element={<Contact/>} />
 		<Route path='/sign-up' element={<SignUp/>} />
-    <Route path='/mapPage' element={<MapPage/>} />
+    	<Route path='/mapPage' element={<MapPage/>} />
 	</Routes>
 	</Router>
 );

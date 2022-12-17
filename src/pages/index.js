@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/index.css'
-import Schedule from './schedule';
+import Schedule from './schedule2';
+
 
 const Home = () => {
 return (
