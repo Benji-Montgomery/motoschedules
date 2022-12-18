@@ -10,6 +10,11 @@ const Schedule = () => {
         console.log(raceOrg)
         dispatch(manageFilter(raceOrg))
     }
+    const handleFilterAll = () => {
+        dispatch(manageFilter('WMRRA'))
+        dispatch(manageFilter('CascadiaSM'))
+        dispatch(manageFilter('Puyallup_Flat_Track'))
+    }
     const currentState = useSelector(state => state)
     console.log('currentstate', currentState)
     const buttonStyler = (raceorg) => {
@@ -24,6 +29,7 @@ const Schedule = () => {
                 <button style={buttonStyler('CascadiaSM')} onClick={() => handleFilter('CascadiaSM')}>Cascadia SuperMoto</button>
                 <button style={buttonStyler('Puyallup_Flat_Track')} onClick={() => handleFilter('Puyallup_Flat_Track')}>Puyallup Flat Track</button>
                 <button onClick={() => handleFilter()}>CLEAR</button>
+                <button onClick={() => handleFilterAll()}>ALL</button>
             </section>
             <section>
                 <Filter />
