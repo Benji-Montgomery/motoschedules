@@ -7,6 +7,7 @@ import markers from '../components/markers'
 //import { Marker } from "@react";
 import './css/map.css'
 
+const KEY = process.env.REACT_APP_GOOGLE_API_KEY
 const MapPage = () => {
  const containerStyle = {
    width: '100%',
@@ -37,7 +38,7 @@ const icon = {
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'AIzaSyBvy-6NL3yuEiqBubSgwEIaOpQACy5iCiM'
+    googleMapsApiKey: KEY
   })
 
   const [map, setMap] = React.useState(null)
