@@ -12,15 +12,17 @@ const MapPage = () => {
    width: '100%',
    height: '100%',
    //border: '5px solid red',
-   borderRadius: '5%'
+   borderRadius: '20px'
  };
 const MarkerSection = () =>{
   console.log(markers)
+  const handleNodeClick = (marker) => {
+    console.log('marker', marker)
+  }
   return(
   <section className="markers">
-    <h2>blogs</h2>
       {markers.map(marker =>
-        <Marker position={marker} label={marker.name} icon={icon} key={Math.random(5)} />
+        <Marker onClick={() => handleNodeClick(marker)} position={marker} label={marker.name} icon={icon} key={Math.random(5)} />
       )}
       </section>
 )}
@@ -50,6 +52,8 @@ function MyComponent() {
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null)
   }, [])
+
+  
 
   return isLoaded ? (
     <div id="map_canvas">
