@@ -4,14 +4,16 @@ import { GoogleMap, useJsApiLoader, Marker} from '@react-google-maps/api';
 //import {Wrapper, Status } from '@googlemaps/react-wrapper'
 //import { useState, useEffect } from 'react'
 import markers from '../components/markers'
-
 //import { Marker } from "@react";
+import './css/map.css'
 
 const MapPage = () => {
-const containerStyle = {
-  width: '600px',
-  height: '400px'
-};
+ const containerStyle = {
+   width: '100%',
+   height: '100%',
+   //border: '5px solid red',
+   borderRadius: '5%'
+ };
 const MarkerSection = () =>{
   console.log(markers)
   return(
@@ -38,22 +40,23 @@ function MyComponent() {
 
   const [map, setMap] = React.useState(null)
   console.log(map)
-//const onLoad = React.useCallback(function callback(map) {
-//  // This is just an example of getting and using the map instance!!! don't just blindly copy!
-//  const bounds = new window.google.maps.LatLngBounds(center);
-//  map.fitBounds(bounds);
-//  setMap(map)
-//}, [])
+// const onLoad = React.useCallback(function callback(map) {
+//   // This is just an example of getting and using the map instance!!! don't just blindly copy!
+//   const bounds = new window.google.maps.LatLngBounds(center);
+//   map.fitBounds(bounds);
+//   setMap(map)
+// }, [])
 
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null)
   }, [])
 
   return isLoaded ? (
+    <div id="map_canvas">
       <GoogleMap
-        mapContainerStyle={containerStyle}
         center={center}
         zoom={5}
+        mapContainerStyle={containerStyle}
         //onLoad={onLoad}
         onUnmount={onUnmount}
       >
@@ -61,13 +64,16 @@ function MyComponent() {
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
+    </div>
   ) : <></>
 }
 
   return (
-    <div>
+    <div id="angry_main">
       <h3>Map with pins of Supermoto / Minimoto racing tracks</h3>
+      <div className='mainComponent'>
       <MyComponent />
+      </div>
     </div>
   );
 }
