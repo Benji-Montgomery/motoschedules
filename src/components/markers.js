@@ -1,5 +1,10 @@
 const markers = [
     {
+        name: 'Adams',
+        lat: 34.008655,
+        lng: -117.381843
+    },
+    {
         name: 'Bremerton',
         lat: 47.492257,
         lng: -122.754693

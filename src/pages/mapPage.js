@@ -26,7 +26,7 @@ const MarkerSection = () =>{
 )}
 const center = {
   lat: 44.5558,
-  lng: -114.4701
+  lng: -116.4701
 };
 const icon = {
   url: "/img/map/pop.svg",

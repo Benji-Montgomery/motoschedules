@@ -2,6 +2,7 @@ import { useSelector } from "react-redux"
 import wmrra from './wmrra'
 import cascadiaSM from './cascadiaSM'
 import puyallup from './puyallup'
+import './css/filter.css'
 
 const Filter = () => {
     const filtered = useSelector(state => state)
@@ -36,7 +37,7 @@ const Filter = () => {
             filtered list:
             <ul>
             {anecdotesFiltered.map(race =>
-            <div key={Math.random()}>
+            <div key={Math.random()} class="list_div">
               <li>
                 <span>{dateFunction(race)}</span>
                 <span> {race.name}</span>
