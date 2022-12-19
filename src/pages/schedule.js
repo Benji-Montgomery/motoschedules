@@ -19,7 +19,7 @@ const Schedule = () => {
     console.log('currentstate', currentState)
     const buttonStyler = (raceorg) => {
         if(currentState.filter.includes(raceorg)){
-            return { background: 'aqua' }
+            return { background: '#04a6d1' }
         }
     }
     return(
