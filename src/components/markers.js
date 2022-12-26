@@ -5,9 +5,19 @@ const markers = [
         lng: -117.381843
     },
     {
+        name: 'Apex',
+        lat: 33.8538,
+        lng: -117.2032
+    },
+    {
         name: 'Bremerton',
         lat: 47.492257,
         lng: -122.754693
+    },
+    {
+        name: 'Horse Thief',
+        lat: 34.8702,
+        lng: -118.2662
     },
     {
         name: 'IMI',
