@@ -1,12 +1,13 @@
 import { useSelector } from "react-redux"
-import wmrra from './wmrra'
-import cascadiaSM from './cascadiaSM'
-import puyallup from './puyallup'
+import wmrra from './orgs/wmrra'
+import cascadiaSM from './orgs/cascadiaSM'
+import puyallup from './orgs/puyallup'
 import './css/filter.css'
+import wtd from './orgs/2wtd.js'
 
 const Filter = () => {
     const filtered = useSelector(state => state)
-    let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(puyallup.races))
+    let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(puyallup.races.concat(wtd.races)))
     const filterFunction = (x) => {
       for(let i = 0; i < filtered.filter.length; i++){
         if(x.name.includes(filtered.filter[i])){
