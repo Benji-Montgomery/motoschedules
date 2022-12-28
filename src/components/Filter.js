@@ -7,6 +7,7 @@ import wtd from './orgs/2wtd.js'
 
 const Filter = () => {
     const filtered = useSelector(state => state)
+    //These are all the racing orgs
     let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(puyallup.races.concat(wtd.races)))
     const filterFunction = (x) => {
       for(let i = 0; i < filtered.filter.length; i++){
