@@ -15,6 +15,11 @@ const markers = [
         lng: -122.754693
     },
     {
+        name: 'Desert Park Raceway',
+        lat: 39.6810,
+        lng: -119.8668
+    },
+    {
         name: 'Horse Thief',
         lat: 34.8702,
         lng: -118.2662
@@ -38,6 +43,11 @@ const markers = [
         name: 'SKRA',
         lat: 47.657778,
         lng: -117.591583
+    },
+    {
+        name: 'SMKA',
+        lat: 34.8922,
+        lng: -120.464655
     },
     {
         name: 'Sultan',

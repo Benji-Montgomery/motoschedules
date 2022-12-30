@@ -1,24 +1,27 @@
-//import './App.css';
 import React from 'react'
 import { GoogleMap, useJsApiLoader, Marker} from '@react-google-maps/api';
-//import {Wrapper, Status } from '@googlemaps/react-wrapper'
-//import { useState, useEffect } from 'react'
 import markers from '../components/markers'
-//import { Marker } from "@react";
 import './css/map.css'
+import { useState } from 'react';
+
 
 const KEY = process.env.REACT_APP_GOOGLE_API_KEY
 const MapPage = () => {
+  const [ iframeDisplay, setIframeDisplay ]= useState('none')
+  const [ markerName, setMarkerName ] = useState('')
+
+  const infoImage = '/img/' + markerName + '.webp'
  const containerStyle = {
    width: '100%',
    height: '100%',
-   //border: '5px solid red',
    borderRadius: '20px'
  };
+
 const MarkerSection = () =>{
-  console.log(markers)
   const handleNodeClick = (marker) => {
     console.log('marker', marker)
+    setIframeDisplay('visible')
+    setMarkerName(marker.name)
   }
   return(
   <section className="markers">
@@ -27,6 +30,10 @@ const MarkerSection = () =>{
       )}
       </section>
 )}
+
+const handleInfoClose = () => {
+  setIframeDisplay('none')
+}
 const center = {
   lat: 44.5558,
   lng: -116.4701
@@ -54,6 +61,30 @@ function MyComponent() {
     setMap(null)
   }, [])
 
+  const infoStyle = {
+    borderRadius: '10px',
+    overflow: 'hidden',
+    backgroundColor: 'lightgrey',
+    width: '50vw',
+    height: '60vh',
+    position: 'absolute',
+    //border: '5px solid red',
+    top: '200px',
+    display: iframeDisplay
+  }
+
+  const InfoStuff = () => {
+    console.log(infoImage)
+    return (
+      <section>
+        <button style={{float: 'right'}} onClick={() => handleInfoClose()}>X</button>
+        <h3>
+          {markerName}
+        </h3>
+        <img style={{width: '50vw', height: 'auto',}} src={infoImage} alt='track layout'></img>
+      </section>
+    )
+  }
   
 
   return isLoaded ? (
@@ -69,6 +100,9 @@ function MyComponent() {
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
+      <div style={infoStyle} >
+        <InfoStuff />
+      </div>
     </div>
   ) : <></>
 }
