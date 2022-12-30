@@ -11,3 +11,9 @@ h3{
 #angry_main{
     margin: 0 5vw;
 }
+.marker{
+    border: 5px solid black;
+}
+.markers{
+    border: 5px solid black;
+}

@@ -15,7 +15,7 @@ const markers = [
         lng: -122.754693
     },
     {
-        name: 'Desert Park Raceway',
+        name: 'NNKC',
         lat: 39.6810,
         lng: -119.8668
     },

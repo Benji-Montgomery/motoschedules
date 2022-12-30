@@ -11,6 +11,7 @@ const MapPage = () => {
   const [ markerName, setMarkerName ] = useState('')
 
   const infoImage = '/img/' + markerName + '.webp'
+
  const containerStyle = {
    width: '100%',
    height: '100%',
@@ -26,7 +27,17 @@ const MarkerSection = () =>{
   return(
   <section className="markers">
       {markers.map(marker =>
-        <Marker onClick={() => handleNodeClick(marker)} position={marker} label={marker.name} icon={icon} key={Math.random(5)} />
+      <div className='marker' key={Math.random(4)}>
+        <Marker 
+          className='marker'
+          onClick={() => handleNodeClick(marker)} 
+          position={marker} 
+          label={marker.name} 
+          icon={icon} 
+          style={{border: '5px solid black'}} 
+          key={Math.random(5)} 
+        />
+      </div>
       )}
       </section>
 )}
@@ -40,7 +51,6 @@ const center = {
 };
 const icon = {
   url: "/img/map/pop.svg",
-  anchor: { x: 5, y: 5 }
 }
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
@@ -50,12 +60,6 @@ function MyComponent() {
 
   const [map, setMap] = React.useState(null)
   console.log(map)
-// const onLoad = React.useCallback(function callback(map) {
-//   // This is just an example of getting and using the map instance!!! don't just blindly copy!
-//   const bounds = new window.google.maps.LatLngBounds(center);
-//   map.fitBounds(bounds);
-//   setMap(map)
-// }, [])
 
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null)
