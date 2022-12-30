@@ -23,6 +23,7 @@ const MarkerSection = () =>{
     console.log('marker', marker)
     setIframeDisplay('visible')
     setMarkerName(marker.name)
+
   }
   return(
   <section className="markers">
@@ -69,11 +70,12 @@ function MyComponent() {
     borderRadius: '10px',
     overflow: 'hidden',
     backgroundColor: 'lightgrey',
-    width: '50vw',
-    height: '60vh',
+    width: '70vw',
+    height: '65vh',
     position: 'absolute',
     //border: '5px solid red',
-    top: '200px',
+    top: '180px',
+    right: '100px',
     display: iframeDisplay
   }
 
@@ -85,7 +87,7 @@ function MyComponent() {
         <h3>
           {markerName}
         </h3>
-        <img style={{width: '50vw', height: 'auto',}} src={infoImage} alt='track layout'></img>
+        <img style={{maxWidth: '70vw', maxHeight: '65vh', objectFit: 'contain'}} src={infoImage} alt='track layout'></img>
       </section>
     )
   }
