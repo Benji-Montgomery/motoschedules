@@ -12,9 +12,20 @@ const filterSlice = createSlice({
         },
         resetFilter(){
             return ['MYCLAROVOIANTPANTSAREONFIRE']
+        },
+        setRemoval(state, action){
+            const valueToRemove = action.payload
+            const filteredState = state.filter(item => item !== valueToRemove)
+            return filteredState
         }
     }
 })
+
+export const removalFilter = (content) => {
+    return (dispatch) => {
+        dispatch(setRemoval(content))
+    }
+}
 
 export const manageFilter = (content) => {
     if(content){return (dispatch) => {
@@ -26,5 +37,5 @@ export const manageFilter = (content) => {
     }
 }
 
-export const { setFilter, resetFilter } = filterSlice.actions
+export const { setFilter, resetFilter, setRemoval } = filterSlice.actions
 export default filterSlice.reducer

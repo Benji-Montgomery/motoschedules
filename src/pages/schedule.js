@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { manageFilter } from "../reducers/filterReducer"
+import { manageFilter, removalFilter } from "../reducers/filterReducer"
 import Filter from "../components/Filter"
 import './css/schedule.css'
 
@@ -7,8 +7,13 @@ const Schedule = () => {
     const dispatch = useDispatch()
 
     const handleFilter = (raceOrg) => {
+        if(currentState.filter.includes(raceOrg)){
+            console.log('woopyieya')
+            dispatch(removalFilter(raceOrg))
+        }else{
         console.log(raceOrg)
         dispatch(manageFilter(raceOrg))
+        }
     }
     const handleFilterAll = () => {
         dispatch(manageFilter('WMRRA'))

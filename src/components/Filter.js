@@ -39,7 +39,7 @@ const Filter = () => {
             filtered list:
             <ul>
             {anecdotesFiltered.map(race =>
-            <div key={Math.random()} class="list_div">
+            <div key={Math.random()} className="list_div">
               <li>
                 <span>{dateFunction(race)}</span>
                 <span> {race.name}</span>
