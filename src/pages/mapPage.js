@@ -20,10 +20,8 @@ const MapPage = () => {
 
 const MarkerSection = () =>{
   const handleNodeClick = (marker) => {
-    console.log('marker', marker)
     setIframeDisplay('visible')
     setMarkerName(marker.name)
-
   }
   return(
   <section className="markers">
@@ -33,7 +31,7 @@ const MarkerSection = () =>{
           className='marker'
           onClick={() => handleNodeClick(marker)} 
           position={marker} 
-          label={marker.name} 
+          label={marker.name}
           icon={icon} 
           style={{border: '5px solid black'}} 
           key={Math.random(5)} 
@@ -43,9 +41,11 @@ const MarkerSection = () =>{
       </section>
 )}
 
-const handleInfoClose = () => {
-  setIframeDisplay('none')
-}
+ const handleInfoClose = () => {
+
+   setIframeDisplay('none')
+ }
+
 const center = {
   lat: 44.5558,
   lng: -116.4701
@@ -60,9 +60,9 @@ function MyComponent() {
   })
 
   const [map, setMap] = React.useState(null)
-  console.log(map)
 
   const onUnmount = React.useCallback(function callback(map) {
+    console.log('unmounting')
     setMap(null)
   }, [])
 
@@ -70,27 +70,30 @@ function MyComponent() {
     borderRadius: '10px',
     overflow: 'hidden',
     backgroundColor: 'lightgrey',
-    width: '70vw',
-    height: '65vh',
+    width: '80vw',
+    height: '60vh',
     position: 'absolute',
     //border: '5px solid red',
     top: '180px',
-    right: '100px',
-    display: iframeDisplay
+    left: '10vw',
+    display: iframeDisplay,
+    border: '5px solid black'
   }
 
   const InfoStuff = () => {
-    console.log(infoImage)
     return (
       <section>
-        <button style={{float: 'right'}} onClick={() => handleInfoClose()}>X</button>
+        <button style={{float: 'right'}} onClick={() => handleInfoClose()}>close</button>
         <h3>
           {markerName}
         </h3>
-        <img style={{maxWidth: '70vw', maxHeight: '65vh', objectFit: 'contain'}} src={infoImage} alt='track layout'></img>
+        <img style={{maxWidth: '70vw', maxHeight: '50vh', objectFit: 'contain'}} src={infoImage} alt='track layout'></img>
       </section>
     )
   }
+  const onLoad = () => {
+  }
+  
   
 
   return isLoaded ? (
@@ -99,7 +102,7 @@ function MyComponent() {
         center={center}
         zoom={5}
         mapContainerStyle={containerStyle}
-        //onLoad={onLoad}
+        onLoad={onLoad}
         onUnmount={onUnmount}
       >
         <MarkerSection />
