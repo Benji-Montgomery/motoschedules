@@ -60,10 +60,10 @@ function MyComponent() {
   })
 
   const [map, setMap] = React.useState(null)
-
+  console.log(map)
   const onUnmount = React.useCallback(function callback(map) {
     console.log('unmounting')
-    setMap(null)
+    setMap(map)
   }, [])
 
   const infoStyle = {
