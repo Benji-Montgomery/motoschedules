@@ -20,7 +20,7 @@ const markers = [
         lng: -119.8668
     },
     {
-        name: 'Horse Thief',
+        name: 'Horse_Thief',
         lat: 34.8702,
         lng: -118.2662
     },

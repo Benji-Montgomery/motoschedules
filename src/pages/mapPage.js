@@ -41,8 +41,8 @@ const MarkerSection = () =>{
       </section>
 )}
 
- const handleInfoClose = () => {
-
+ const handleInfoClose = (e) => {
+  e.preventDefault();
    setIframeDisplay('none')
  }
 
@@ -83,7 +83,7 @@ function MyComponent() {
   const InfoStuff = () => {
     return (
       <section>
-        <button style={{float: 'right'}} onClick={() => handleInfoClose()}>close</button>
+        <button style={{float: 'right'}} onClick={handleInfoClose}>close</button>
         <h3>
           {markerName}
         </h3>
@@ -94,8 +94,6 @@ function MyComponent() {
   const onLoad = () => {
   }
   
-  
-
   return isLoaded ? (
     <div id="map_canvas">
       <GoogleMap
