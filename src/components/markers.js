@@ -15,6 +15,11 @@ const markers = [
         lng: -122.754693
     },
     {
+        name: 'Herrin_Compound',
+        lat: 32.4780,
+        lng: -83.0291
+    },
+    {
         name: 'NNKC',
         lat: 39.6810,
         lng: -119.8668
