@@ -1,0 +1,9 @@
+.dateContainer{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.date, .time{
+    padding: 5px 5px;
+    font-size: 20px;
+}

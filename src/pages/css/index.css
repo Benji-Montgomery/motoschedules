@@ -25,9 +25,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: lightgray;
 }
+.headLine{
+  font-size: 30px;
+}
 #main{
   padding: 0 7.5%;
-  border: 1px solid black;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

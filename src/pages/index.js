@@ -12,8 +12,8 @@ return (
 			<img src="/img/sumo.webp" alt="supermoto" id="splashImg"></img>
 		</section>
 		<section id="main">
-		<h1>Moto Schedule</h1>
-		<h3><DateTime /></h3>
+		<h1 className='headLine'>Moto Schedule</h1>
+		<span><DateTime /></span>
 		<p>It is hard to find all of the Super Moto racing schedules in one place. This is my solution.</p>
 		<p>All dates are 2023</p>
 		<Schedule />
