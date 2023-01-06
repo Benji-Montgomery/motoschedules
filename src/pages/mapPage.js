@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoogleMap, useJsApiLoader, Marker, InfoWindow, LoadScript} from '@react-google-maps/api';
+import { GoogleMap, Marker, InfoWindow, LoadScript} from '@react-google-maps/api';
 import markers from '../components/markers'
 import './css/map.css'
 import { useState } from 'react';
@@ -157,10 +157,14 @@ const MapPage = () => {
                           {
                               (activeInfoWindow === index)
                               &&
-                              <InfoWindow position={marker.position}>
-                                  <span>
+                              <InfoWindow
+                                options={{ariaLabel: 'frik', disableAutoPan: false, maxWidth: '100vw'}}
+                                
+                                position={marker.position}
+                                >
+                                  <span style={{fontSize: '22px'}}>
                                   {marker.name}
-                                  <img src={`/img/` + marker.name + `.webp`} alt="sandy"></img>
+                                  <img style={{maxHeight: '40vh', maxWidth: '50vw'}}src={`/img/` + marker.name + `.webp`} alt="sandy"></img>
                                   </span>
                               </InfoWindow>
                           }  
