@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux"
 import wmrra from './orgs/wmrra'
-import cascadiaSM from './orgs/cascadiaSM'
+import cascadiaSM from './orgs/cascadia_Super_Moto'
 import puyallup from './orgs/puyallup'
 import UTAHSBA_SuperMoto from './orgs/UTAHSBA_SuperMoto'
 import './css/filter.css'
@@ -42,8 +42,8 @@ const Filter = () => {
             {anecdotesFiltered.map(race =>
             <div key={Math.random()} className="list_div">
               <li>
-                <span>{dateFunction(race)}</span>
-                <span> {race.name}</span>
+                <span>{dateFunction(race)} -</span>
+                <span> {race.name.replace(/_/g,' ')} - </span>
                 <span> {race.track}</span>
               </li>
             </div>

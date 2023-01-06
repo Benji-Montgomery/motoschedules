@@ -1,4 +1,4 @@
-const name = 'CascadiaSM'
+const name = 'Cascadia_Super_Moto'
 
 const races = [
     {
@@ -15,7 +15,7 @@ const races = [
     },
     {
         name: name,
-        track: 'Streets of Sultan',
+        track: 'Streets of Sultan - Sultan, Wa',
         date: ['TBD'],
         sortDate: 1
     },
