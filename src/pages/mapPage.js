@@ -33,7 +33,7 @@ const MapPage = () => {
     console.log(event.latLng.lat())
     console.log(event.latLng.lng())
   }
-  const iconBase = "https://developers.google.com/maps/documentation/javascript/examples/full/images/"
+
   return (
     <div id="angry_main">
       <h3>Map with pins of Supermoto / Minimoto racing tracks</h3>
