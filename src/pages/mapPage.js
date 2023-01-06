@@ -33,7 +33,7 @@ const MapPage = () => {
     console.log(event.latLng.lat())
     console.log(event.latLng.lng())
   }
-
+  const iconBase = "https://developers.google.com/maps/documentation/javascript/examples/full/images/"
   return (
     <div id="angry_main">
       <h3>Map with pins of Supermoto / Minimoto racing tracks</h3>
@@ -50,7 +50,8 @@ const MapPage = () => {
                 <Marker 
                   key={index} 
                   position={marker}
-                  label={{text: marker.name, fontSize: '20px', fontWeight: 'bold'}}
+                  icon={'/img/motorcycling.png'}
+                  label={{text: marker.name, fontSize: '18px', fontWeight: 'bold', color: 'white'}}
                   //draggable={marker.draggable}
                   onDragEnd={event => markerDragEnd(event, index)}
                   onClick={event => markerClicked(marker, index)} 
