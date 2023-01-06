@@ -6,106 +6,7 @@ import { useState } from 'react';
 
 
 const KEY = process.env.REACT_APP_GOOGLE_API_KEY
-// const MapPage = () => {
-//   const [ iframeDisplay, setIframeDisplay ]= useState('none')
-//   const [ markerName, setMarkerName ] = useState('')
-//   const [activeInfoWindow, setActiveInfoWindow] = useState("");
 
-// const MarkerSection = () =>{
-//   const handleNodeClick = (marker) => {
-//     setIframeDisplay('visible')
-//     setMarkerName(marker.name)
-//   }
-//   return(
-//   <section className="markers">
-//       {markers.map(marker =>
-//       <div className='marker' key={Math.random(4)}>
-//         <Marker 
-//           className='marker'
-//           onClick={() => handleNodeClick(marker)} 
-//           position={marker} 
-//           label={marker.name}
-//           icon={icon} 
-//           style={{border: '5px solid black'}} 
-//           key={Math.random(5)} 
-//         />
-//       </div>
-//       )}
-//       </section>
-// )}
-
-//  const handleInfoClose = (e) => {
-//   e.preventDefault();
-//    setIframeDisplay('none')
-//  }
-
-// const center = {
-//   lat: 44.5558,
-//   lng: -116.4701
-// };
-// const icon = {
-//   url: "/img/map/pop.svg",
-// }
-// function MyComponent() {
-//   const { isLoaded } = useJsApiLoader({
-//     id: 'google-map-script',
-//     googleMapsApiKey: KEY
-//   })
-
-//   const [map, setMap] = React.useState(null)
-//   console.log(map)
-//   const onUnmount = React.useCallback(function callback(map) {
-//     console.log('unmounting')
-//     setMap(map)
-//   }, [])
-
-//   const infoStyle = {
-//     borderRadius: '10px',
-//     overflow: 'hidden',
-//     backgroundColor: 'lightgrey',
-//     width: '80vw',
-//     height: '60vh',
-//     position: 'absolute',
-//     //border: '5px solid red',
-//     top: '180px',
-//     left: '10vw',
-//     display: iframeDisplay,
-//     border: '5px solid black'
-//   }
-
-  // const InfoStuff = () => {
-  //   return (
-  //     <section>
-  //       <button style={{float: 'right'}} onClick={handleInfoClose}>close</button>
-  //       <h3>
-  //         {markerName}
-  //       </h3>
-  //       <img style={{maxWidth: '70vw', maxHeight: '50vh', objectFit: 'contain'}} src={infoImage} alt='track layout'></img>
-  //     </section>
-  //   )
-  // }
-  // const onLoad = () => {
-  // }
-  
-//   return isLoaded ? (
-//     <div id="map_canvas">
-//       <GoogleMap
-//         center={center}
-//         zoom={5}
-//         mapContainerStyle={containerStyle}
-//         onLoad={onLoad}
-//         onUnmount={onUnmount}
-//       >
-//         <MarkerSection />
-//         { /* Child components, such as markers, info windows, etc. */ }
-//         <></>
-//       </GoogleMap>
-//       <div style={infoStyle} >
-//         <InfoStuff />
-//       </div>
-//     </div>
-//   ) : <></>
-//
 const MapPage = () => {
   const [activeInfoWindow, setActiveInfoWindow] = useState("")
 
@@ -139,38 +40,41 @@ const MapPage = () => {
       <div className='mainComponent'>
         <div id="map_canvas">
           <LoadScript googleMapsApiKey={KEY}>
-              <GoogleMap 
-                  mapContainerStyle={containerStyle} 
-                  center={center} 
-                  zoom={5}
-                  onClick={mapClicked}
-              >
-                  {markers.map((marker, index) => (
-                      <Marker 
-                          key={index} 
-                          position={marker}
-                          label={{text: marker.name, fontSize: '20px', fontWeight: 'bold'}}
-                          //draggable={marker.draggable}
-                          onDragEnd={event => markerDragEnd(event, index)}
-                          onClick={event => markerClicked(marker, index)} 
+            <GoogleMap 
+                mapContainerStyle={containerStyle} 
+                center={center} 
+                zoom={5}
+                onClick={mapClicked}
+            >
+              {markers.map((marker, index) => (
+                <Marker 
+                  key={index} 
+                  position={marker}
+                  label={{text: marker.name, fontSize: '20px', fontWeight: 'bold'}}
+                  //draggable={marker.draggable}
+                  onDragEnd={event => markerDragEnd(event, index)}
+                  onClick={event => markerClicked(marker, index)} 
+                >
+                  {
+                    (activeInfoWindow === index)
+                    &&
+                    <InfoWindow
+                      options={{maxWidth: '100vw'}}
+                      
+                      position={marker.position}
                       >
-                          {
-                              (activeInfoWindow === index)
-                              &&
-                              <InfoWindow
-                                options={{ariaLabel: 'frik', disableAutoPan: false, maxWidth: '100vw'}}
-                                
-                                position={marker.position}
-                                >
-                                  <span style={{fontSize: '22px'}}>
-                                  {marker.name}
-                                  <img style={{maxHeight: '40vh', maxWidth: '50vw'}}src={`/img/` + marker.name + `.webp`} alt="sandy"></img>
-                                  </span>
-                              </InfoWindow>
-                          }  
-                      </Marker>
-                  ))}
-              </GoogleMap>     
+                        <span style={{fontSize: '20px', fontWeight: 'bold', display: 'flex', flexDirection: 'column'}}>
+                          <p style={{margin: 0}}>{marker.fullName} - {marker.location}</p>
+                          {/* <h4 style={{padding: '0'}}>{marker.name}</h4> */}
+                          <span>
+                            <img style={{maxHeight: '40vh', maxWidth: '70vw'}}src={`/img/` + marker.name + `.webp`} alt="Track Map"></img>
+                          </span>
+                        </span>
+                    </InfoWindow>
+                  }  
+                </Marker>
+              ))}
+            </GoogleMap>     
           </LoadScript>
         </div>
       </div>
