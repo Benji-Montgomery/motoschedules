@@ -1,5 +1,6 @@
 const markers = [
     {
+        mouseOver: false,
         name: 'Adams',
         fullName: 'Adams Motorsports Park',
         location: 'Riverside, Ca',
@@ -7,6 +8,7 @@ const markers = [
         lng: -117.381843
     },
     {
+        mouseOver: false,
         name: 'Apex',
         fullName: 'Apex Kart Racing',
         location: 'Perris, Ca',
@@ -14,6 +16,7 @@ const markers = [
         lng: -117.2032
     },
     {
+        mouseOver: false,
         name: 'Bremerton',
         fullName: 'Bremerton SuperCone Course',
         location: 'Bremerton, Wa',
@@ -21,6 +24,7 @@ const markers = [
         lng: -122.754693
     },
     {
+        mouseOver: false,
         name: 'Herrin_Compound',
         fullName: 'the Herrin Compound',
         location: 'Dublin, Ga',
@@ -28,6 +32,7 @@ const markers = [
         lng: -83.0291
     },
     {
+        mouseOver: false,
         name: 'NNKC',
         fullName: 'Desert Park Raceway',
         location: 'Reno, Nv',
@@ -35,6 +40,7 @@ const markers = [
         lng: -119.8668
     },
     {
+        mouseOver: false,
         name: 'Horse_Thief',
         fullName: 'Willow Springs International Raceway',
         location: 'Rosamond, Ca',
@@ -42,6 +48,7 @@ const markers = [
         lng: -118.2662
     },
     {
+        mouseOver: false,
         name: 'IMI',
         fullName: 'IMI Motorsports Complex',
         location: 'Dacono, Co',
@@ -49,6 +56,7 @@ const markers = [
         lng: -104.949296
     },
     {
+        mouseOver: false,
         name: 'Mac',
         fullName: 'Mac Track',
         location: 'McMinnville, Or',
@@ -56,6 +64,7 @@ const markers = [
         lng: -123.170771
     },
     {
+        mouseOver: false,
         name: 'Shasta',
         fullName: 'Shasta Kart Klub',
         location: 'Redding, Ca',
@@ -63,6 +72,7 @@ const markers = [
         lng: -122.285629
     },
     {
+        mouseOver: false,
         name: 'SKRA',
         fullName: 'Spokane Kart Racing Association',
         location: 'Spokane, Wa',
@@ -70,6 +80,7 @@ const markers = [
         lng: -117.591583
     },
     {
+        mouseOver: false,
         name: 'SMKA',
         fullName: 'Santa Maria Kart Track',
         location: 'Santa Maria, Ca',
@@ -77,6 +88,7 @@ const markers = [
         lng: -120.464655
     },
     {
+        mouseOver: false,
         name: 'Sultan',
         fullName: 'Streets of Sultan',
         location: 'Sultan, Wa',
@@ -84,6 +96,7 @@ const markers = [
         lng: -121.796850
     },
     {
+        mouseOver: false,
         name: 'TCKC',
         fullName: 'Tri Cities Kart Club',
         location: 'Richland, Wa',
@@ -91,6 +104,7 @@ const markers = [
         lng: -119.347580
     },
     {
+        mouseOver: false,
         name: 'UMC',
         fullName: 'Utah Motorsports Campus',
         location: 'Erda, Ut',

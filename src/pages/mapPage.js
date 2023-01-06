@@ -21,7 +21,7 @@ const MapPage = () => {
   };
 
   const mapClicked = (event) => { 
-    console.log(event.latLng.lat(), event.latLng.lng()) 
+    console.log(event)
   }
 
   const markerClicked = (marker, index) => {  
@@ -33,6 +33,7 @@ const MapPage = () => {
     console.log(event.latLng.lat())
     console.log(event.latLng.lng())
   }
+
 
   return (
     <div id="angry_main">
@@ -50,11 +51,13 @@ const MapPage = () => {
                 <Marker 
                   key={index} 
                   position={marker}
-                  icon={'/img/motorcycling.png'}
+                  icon={'img/motorcycling.png'}
                   label={{text: marker.name, fontSize: '18px', fontWeight: 'bold', color: 'white'}}
                   //draggable={marker.draggable}
                   onDragEnd={event => markerDragEnd(event, index)}
-                  onClick={event => markerClicked(marker, index)} 
+                  onClick={event => markerClicked(marker, index)}
+                  //onMouseOver={event => setIconState(iconState.concat(marker.name))}
+                  // onMouseOut={() => setIconState(...iconState, '')}
                 >
                   {
                     (activeInfoWindow === index)
