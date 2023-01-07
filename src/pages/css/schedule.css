@@ -11,5 +11,6 @@ button:hover{
 @media (orientation: portrait){
     button{
         font-size: 16px;
+        margin: 0px 10px 0 px 10px;
     }
 }
