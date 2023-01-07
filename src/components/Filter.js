@@ -38,10 +38,10 @@ const Filter = () => {
       <div style={style}>
         <section>
             filtered list:
-            <ul>
+            <ul className="filterUL">
             {anecdotesFiltered.map(race =>
             <div key={Math.random()} className="list_div">
-              <li>
+              <li className="filterLI">
                 <span>{dateFunction(race)} -</span>
                 <span> {race.name.replace(/_/g,' ')} - </span>
                 <span> {race.track}</span>

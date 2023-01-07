@@ -55,6 +55,10 @@ return (
                 <span>
                   <img style={{maxHeight: '40vh', maxWidth: '70vw'}}src={`/img/` + marker.name + `.webp`} alt="Track Map"></img>
                 </span>
+                <ul className='mapUL'>
+                  <li className='mapLI'>Longest Straightaway: {marker.straight}ft</li>
+                  <li className='mapLI'>Turns: {marker.turns}</li>
+                </ul>
               </span>
           </InfoWindow>
         }  

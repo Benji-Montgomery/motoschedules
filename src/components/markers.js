@@ -171,7 +171,9 @@ const markers = [
         fullName: 'Utah Motorsports Campus',
         location: 'Erda, Ut',
         lat: 40.584648,
-        lng: -112.377699
+        lng: -112.377699,
+        straight: 974,
+        turns: 17
     }
 
     
