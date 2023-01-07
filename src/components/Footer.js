@@ -21,7 +21,7 @@ const Footer = () => {
                 <a href='https://wmrra.com'>WMRRA</a>
             </span>
             <span>
-
+                <a href="https://hits.sh/motoschedule.com/"><img alt="Hits" src="https://hits.sh/motoschedule.com.svg?color=dfb317"/></a>
             </span>
         </span>
     )
