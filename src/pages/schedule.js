@@ -31,7 +31,7 @@ const Schedule = () => {
     }
     return(
         <section>
-            <section>
+            <section className="buttonSection">
                 <button style={buttonStyler('2WTD_mini_racing')} onClick={() => handleFilter('2WTD_mini_racing')}>2WTD Mini Racing</button>
                 <button style={buttonStyler('Cascadia_Super_Moto')} onClick={() => handleFilter('Cascadia_Super_Moto')}>Cascadia Super Moto</button>
                 <button style={buttonStyler('Puyallup_Flat_Track')} onClick={() => handleFilter('Puyallup_Flat_Track')}>Puyallup Flat Track</button>
