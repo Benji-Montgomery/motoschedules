@@ -27,6 +27,13 @@ const Children = () => {
        return '/img/motorcycling.png'
      }
    }
+  const checker = (prop) => {
+    if(prop !== undefined){
+    return prop
+    }else{
+      return 'Unknown '
+    }
+  }
 
 return (
   <span>
@@ -50,14 +57,15 @@ return (
             position={marker.position}
             //onCloseClick={() => {setIconState('')}}
             >
-              <span style={{fontSize: '20px', fontWeight: 'bold', display: 'flex', flexDirection: 'column'}}>
-                <p style={{margin: 0}}>{marker.fullName} - {marker.location}</p>
+              <span className='mainInfo'>
+                <p className='title'>{marker.fullName} - {marker.location}</p>
                 <span>
                   <img style={{maxHeight: '40vh', maxWidth: '70vw'}}src={`/img/` + marker.name + `.webp`} alt="Track Map"></img>
                 </span>
                 <ul className='mapUL'>
-                  <li className='mapLI'>Longest Straightaway: {marker.straight}ft</li>
-                  <li className='mapLI'>Turns: {marker.turns}</li>
+                  <li className='mapLI'>Longest Straightaway: {checker(marker.straight)}ft</li>
+                  <li className='mapLI'>Turns: {checker(marker.turns)}</li>
+                  <li className='mapLI'>Amenities: {checker(marker.amenities)}</li>
                 </ul>
               </span>
           </InfoWindow>

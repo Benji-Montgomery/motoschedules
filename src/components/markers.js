@@ -82,7 +82,9 @@ const markers = [
         fullName: 'the Herrin Compound',
         location: 'Dublin, Ga',
         lat: 32.4780,
-        lng: -83.0291
+        lng: -83.0291,
+        straight: 281,
+        turns: 13
     },
     {
         name: 'NNKC',
@@ -123,7 +125,8 @@ const markers = [
         lat: 45.225621,
         lng: -123.170771,
         straight: 660,
-        turns: 11
+        turns: 11,
+        amenities: 'Full Hot Showers, Bathroom, Running water'
     },
     {
         name: 'Shasta',
@@ -132,7 +135,8 @@ const markers = [
         lat: 40.504167,
         lng: -122.285629,
         straight: 932,
-        turns: 13
+        turns: 13,
+        amenities: 'Porta Potties'
     },
     {
         name: 'SKRA',
@@ -141,7 +145,8 @@ const markers = [
         lat: 47.657778,
         lng: -117.591583,
         straight: 534,
-        turns: 11
+        turns: 11,
+        amenities: 'Bathroom, Limited Electrical Hookups'
     },
     {
         name: 'SMKA',
@@ -164,7 +169,8 @@ const markers = [
         lat: 46.349114,
         lng: -119.347580,
         straight: 608,
-        turns: 12
+        turns: 12,
+        amenities: 'Full Hot Showers, Bathrooms, Running Water, Many Electrical Hookups'
     },
     { 
         name: 'UMC',

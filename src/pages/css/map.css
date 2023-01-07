@@ -11,6 +11,11 @@ h3{
 #angry_main{
     margin: 0 5vw;
 }
+.mainInfo{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
 .marker{
     border: 5px solid black;
 }
@@ -19,9 +24,14 @@ h3{
 }
 .mapUL{
     text-decoration: none;
+    max-width: 70vw;
 }
 .mapLI{
-    font-size: 20px;
-    font-weight:400;
+    font-size: 14px;
+    font-weight:300;
     list-style: none;
+}
+.title{
+    margin: 0;
+    max-width: 70vw;
 }
