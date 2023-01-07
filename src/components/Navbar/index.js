@@ -11,7 +11,7 @@ return (
             Home
         </NavLink>
 		<NavLink to="/mapPage" >
-			Map
+			Moto Map
 		</NavLink>
 		<NavLink to="/contact" >
 			Contact
