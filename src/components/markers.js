@@ -9,6 +9,14 @@ const markers = [
     },
     {
         mouseOver: false,
+        name: 'Anderson',
+        fullName:'Anderson RacePark',
+        location: 'Palmetto, Fl',
+        lat: 27.6059,
+        lng: -82.5419
+    },
+    {
+        mouseOver: false,
         name: 'Apex',
         fullName: 'Apex Kart Racing',
         location: 'Perris, Ca',
@@ -22,6 +30,42 @@ const markers = [
         location: 'Bremerton, Wa',
         lat: 47.492257,
         lng: -122.754693
+    },
+    {
+        name: 'Bushnell',
+        fullName: 'Bushnell Motorsports Park',
+        location: 'Bushnell, Fl',
+        lat: 28.671,
+        lng: -82.149
+    },
+    {
+        name: 'Cariboo',
+        fullName: 'Cariboo Raceway Park',
+        location: 'Quesnel, Ca',
+        lat: 52.9903,
+        lng: -122.4418
+    },
+    {
+        name: 'CMP',
+        fullName: 'Carolina Motorsports Park',
+        location: 'Kewshaw, Sc',
+        lat: 34.488,
+        lng: -80.596
+    },
+    {
+        name: 'Gainesville',
+        fullName: 'Gainesville Raceway',
+        location: 'Gainesville, Fl',
+        lat: 29.7574,
+        lng: -82.2718
+    },
+    {
+        name: 'GMR',
+        fullName: 'Greg Moore Raceway',
+        location: 'British Columbia, Ca',
+        lat: 49.1722,
+        lng: -121.9778
+
     },
     {
         mouseOver: false,
@@ -38,6 +82,13 @@ const markers = [
         location: 'Reno, Nv',
         lat: 39.6810,
         lng: -119.8668
+    },
+    {
+        name: 'NOLA',
+        fullName: 'New Orleans Motorsports Karting',
+        location: 'New Orleans, La',
+        lat: 29.887,
+        lng: -90.192
     },
     {
         mouseOver: false,
