@@ -6,23 +6,9 @@ import { useState } from 'react';
 
 
 const KEY = process.env.REACT_APP_GOOGLE_API_KEY
-
-const MapPage = () => {
+const Children = () => {
   const [activeInfoWindow, setActiveInfoWindow] = useState("")
   const [iconState, setIconState] = useState('')
-  const containerStyle = {
-    width: '100%',
-    height: '100%',
-    borderRadius: '20px'
-  };
-  const center = {
-     lat: 44.5558,
-     lng: -116.4701
-  };
-
-  const mapClicked = (event) => { 
-    console.log(event)
-  }
 
   const markerClicked = (marker, index) => {
     setIconState(marker.name)
@@ -42,6 +28,57 @@ const MapPage = () => {
      }
    }
 
+return (
+  <span>
+    {markers.map((marker, index) => (
+      <Marker 
+        key={index} 
+        position={marker}
+        icon={iconMarker(marker)}
+        label={{text: marker.name, fontSize: '18px', fontWeight: 'bold', color: 'white'}}
+        //draggable={marker.draggable}
+        onDragEnd={event => markerDragEnd(event, index)}
+        onClick={event => markerClicked(marker, index)}
+        onMouseOver={event => setIconState(marker.name)}
+        onMouseOut={() => setIconState('')}
+      >
+        {
+          (activeInfoWindow === index)
+          &&
+          <InfoWindow
+            options={{maxWidth: '100vw'}}
+            position={marker.position}
+            //onCloseClick={() => {setIconState('')}}
+            >
+              <span style={{fontSize: '20px', fontWeight: 'bold', display: 'flex', flexDirection: 'column'}}>
+                <p style={{margin: 0}}>{marker.fullName} - {marker.location}</p>
+                <span>
+                  <img style={{maxHeight: '40vh', maxWidth: '70vw'}}src={`/img/` + marker.name + `.webp`} alt="Track Map"></img>
+                </span>
+              </span>
+          </InfoWindow>
+        }  
+      </Marker>
+    ))}
+  </span>
+)
+
+}
+const MapPage = () => {
+  const center = {
+     lat: 44.5558,
+     lng: -116.4701
+  };
+  const containerStyle = {
+    width: '100%',
+    height: '100%',
+    borderRadius: '20px'
+  };
+
+  const mapClicked = (event) => { 
+    console.log(event)
+  }
+
   return (
     <div id="angry_main">
       <h3>Map with pins of Supermoto / Minimoto racing tracks</h3>
@@ -54,36 +91,7 @@ const MapPage = () => {
                 zoom={5}
                 onClick={mapClicked}
             >
-              {markers.map((marker, index) => (
-                <Marker 
-                  key={index} 
-                  position={marker}
-                  icon={iconMarker(marker)}
-                  label={{text: marker.name, fontSize: '18px', fontWeight: 'bold', color: 'white'}}
-                  //draggable={marker.draggable}
-                  onDragEnd={event => markerDragEnd(event, index)}
-                  onClick={event => markerClicked(marker, index)}
-                  //onMouseOver={event => setIconState(iconState.concat(marker.name))}
-                  // onMouseOut={() => setIconState(...iconState, '')}
-                >
-                  {
-                    (activeInfoWindow === index)
-                    &&
-                    <InfoWindow
-                      options={{maxWidth: '100vw'}}
-                      position={marker.position}
-                      //onCloseClick={() => {setIconState('')}}
-                      >
-                        <span style={{fontSize: '20px', fontWeight: 'bold', display: 'flex', flexDirection: 'column'}}>
-                          <p style={{margin: 0}}>{marker.fullName} - {marker.location}</p>
-                          <span>
-                            <img style={{maxHeight: '40vh', maxWidth: '70vw'}}src={`/img/` + marker.name + `.webp`} alt="Track Map"></img>
-                          </span>
-                        </span>
-                    </InfoWindow>
-                  }  
-                </Marker>
-              ))}
+              <Children />
             </GoogleMap>     
           </LoadScript>
         </div>

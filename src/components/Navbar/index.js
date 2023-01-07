@@ -7,15 +7,15 @@ return (
 	<>
 	<Nav>
 		<NavMenu>
-		<NavLink to="/" >
-            Home
-        </NavLink>
-		<NavLink to="/mapPage" >
-			Moto Map
-		</NavLink>
-		<NavLink to="/contact" >
-			Contact
-		</NavLink>        
+			<NavLink to="/" >
+        	    Home
+        	</NavLink>
+			<NavLink to="/mapPage" >
+				Moto Map
+			</NavLink>
+			<NavLink to="/contact" >
+				Contact
+			</NavLink>        
 		</NavMenu>
 	</Nav>
 	</>

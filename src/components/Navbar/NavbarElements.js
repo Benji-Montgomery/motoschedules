@@ -12,16 +12,18 @@ z-index: 12;
 `;
 
 export const NavLink = styled(Link)`
-color: #808080;
+color: black;
 display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
 height: 100%;
+font-weight: 500;
+font-size: 20px;
 cursor: pointer;
-&.active {
-	color: #4d4dff;
-}
+// &.active {
+// 	color: #4d4dff;
+// }
 `;
 
 export const Bars = styled(FaBars)`
