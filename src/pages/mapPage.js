@@ -64,12 +64,10 @@ const MapPage = () => {
                     &&
                     <InfoWindow
                       options={{maxWidth: '100vw'}}
-                      
                       position={marker.position}
                       >
                         <span style={{fontSize: '20px', fontWeight: 'bold', display: 'flex', flexDirection: 'column'}}>
                           <p style={{margin: 0}}>{marker.fullName} - {marker.location}</p>
-                          {/* <h4 style={{padding: '0'}}>{marker.name}</h4> */}
                           <span>
                             <img style={{maxHeight: '40vh', maxWidth: '70vw'}}src={`/img/` + marker.name + `.webp`} alt="Track Map"></img>
                           </span>

@@ -8,6 +8,13 @@ const markers = [
         lng: -117.381843
     },
     {
+        name: 'Affinity',
+        fullName: 'Affinity Circuit',
+        location: 'Central Point, Or',
+        lat: 42.4169,
+        lng: -122.8047
+    },
+    {
         mouseOver: false,
         name: 'Anderson',
         fullName:'Anderson RacePark',

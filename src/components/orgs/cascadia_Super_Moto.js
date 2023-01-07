@@ -10,14 +10,20 @@ const races = [
     {
         name: name,
         track: 'Spokane Kart Racing Association - Spokane, Wa',
-        date: ['TBD'],
-        sortDate: 1
+        date: [6,17,18],
+        sortDate: .0617
+    },
+    {
+        name: name,
+        track: 'Affinity Circuit - Medford, Or',
+        date: [7,16],
+        sortDate: .0716
     },
     {
         name: name,
         track: 'Streets of Sultan - Sultan, Wa',
-        date: ['TBD'],
-        sortDate: 1
+        date: [7,22],
+        sortDate: .0722
     },
     {
         name: name,
@@ -28,8 +34,8 @@ const races = [
     {
         name: name,
         track: 'TCKC - Richland, Wa',
-        date: [9,3],
-        sortDate: .0903
+        date: [9,2,3],
+        sortDate: .0902
     }
 ]
 const exportRaces = {
