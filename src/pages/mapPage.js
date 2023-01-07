@@ -9,7 +9,7 @@ const KEY = process.env.REACT_APP_GOOGLE_API_KEY
 
 const MapPage = () => {
   const [activeInfoWindow, setActiveInfoWindow] = useState("")
-
+  const [iconState, setIconState] = useState('')
   const containerStyle = {
     width: '100%',
     height: '100%',
@@ -24,7 +24,8 @@ const MapPage = () => {
     console.log(event)
   }
 
-  const markerClicked = (marker, index) => {  
+  const markerClicked = (marker, index) => {
+    setIconState(marker.name)
     setActiveInfoWindow(index)
     console.log(marker, index) 
   }
@@ -33,7 +34,13 @@ const MapPage = () => {
     console.log(event.latLng.lat())
     console.log(event.latLng.lng())
   }
-
+   const iconMarker = (marker) => {
+     if(marker.name === iconState){
+       return '/img/sumoIcon64.png'
+     }else{
+       return '/img/motorcycling.png'
+     }
+   }
 
   return (
     <div id="angry_main">
@@ -51,7 +58,7 @@ const MapPage = () => {
                 <Marker 
                   key={index} 
                   position={marker}
-                  icon={'img/motorcycling.png'}
+                  icon={iconMarker(marker)}
                   label={{text: marker.name, fontSize: '18px', fontWeight: 'bold', color: 'white'}}
                   //draggable={marker.draggable}
                   onDragEnd={event => markerDragEnd(event, index)}
@@ -65,6 +72,7 @@ const MapPage = () => {
                     <InfoWindow
                       options={{maxWidth: '100vw'}}
                       position={marker.position}
+                      //onCloseClick={() => {setIconState('')}}
                       >
                         <span style={{fontSize: '20px', fontWeight: 'bold', display: 'flex', flexDirection: 'column'}}>
                           <p style={{margin: 0}}>{marker.fullName} - {marker.location}</p>
