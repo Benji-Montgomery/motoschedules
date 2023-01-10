@@ -10,13 +10,13 @@ import MapPage from './pages/mapPage'
 function App() {
 return (
 	<Router>
-	<Navbar />
-	<Routes>
-		<Route exact path='/' element={<Home />} />
-		<Route path='/contact' element={<Contact/>} />
-		<Route path='/sign-up' element={<SignUp/>} />
-    	<Route path='/mapPage' element={<MapPage/>} />
-	</Routes>
+		<Navbar />
+		<Routes>
+			<Route exact path='/' element={<Home />} />
+			<Route path='/contact' element={<Contact/>} />
+			<Route path='/sign-up' element={<SignUp/>} />
+    		<Route path='/mapPage' element={<MapPage/>} />
+		</Routes>
 	</Router>
 );
 }

@@ -42,7 +42,7 @@ const Filter = () => {
             {anecdotesFiltered.map(race =>
             <div key={Math.random()} className="list_div">
               <li className="filterLI">
-                <span>{dateFunction(race)} -</span>
+                <span className="raceDate">{dateFunction(race)} -</span>
                 <span> {race.name.replace(/_/g,' ')} - </span>
                 <span> {race.track}</span>
               </li>

@@ -13,6 +13,7 @@
     list-style-position: outside;*/
     margin: 0;
 }
+
 @media (orientation: portrait){
     .filterLI{
         font-size: 16px;
