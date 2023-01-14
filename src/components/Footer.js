@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <span className='main'>
             <span>
-                <a href='https://www.2wheelstrackdays.com/mini-racing'>2WTD mini racing</a>
+                <a href='https://drtracinginc.com/blogs/news/ama-supermoto'>AMA SUPERMOTO</a>
             </span>
             <span>
                 <a href='https://cascadiasm.com'>Cascadia Super Moto</a>
@@ -19,6 +19,9 @@ const Footer = () => {
             </span>
             <span>
                 <a href='https://wmrra.com'>WMRRA</a>
+            </span>
+            <span>
+                <a href='https://www.2wheelstrackdays.com/mini-racing'>2WTD mini racing</a>
             </span>
             <span>
                 <a href="https://hits.sh/motoschedule.com/"><img alt="Hits" src="https://hits.sh/motoschedule.com.svg?color=dfb317"/></a>
