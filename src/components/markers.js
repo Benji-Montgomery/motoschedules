@@ -54,6 +54,15 @@ const markers = [
         turns: 11
     },
     {
+        name: 'Colorado',
+        fullName: 'Colorado National Speedway',
+        location: 'Dacono, Co',
+        lat: 40.0619,
+        lng: -104.9734,
+        straight: 438
+
+    },
+    {
         name: 'CMP',
         fullName: 'Carolina Motorsports Park',
         location: 'Kewshaw, Sc',
@@ -75,7 +84,13 @@ const markers = [
         lng: -121.9778,
         straight: 662,
         turns: 17
-
+    },
+    {
+        name: 'GP3R',
+        fullName: 'Grand Prix de Trois-Rivieres',
+        location: 'Quebec, Canada',
+        lat: 46.3456,
+        lng: -72.5566,
     },
     {
         name: 'Herrin_Compound',
@@ -127,6 +142,25 @@ const markers = [
         straight: 660,
         turns: 11,
         amenities: 'Full Hot Showers, Bathroom, Running water'
+    },
+    {
+        name: 'Musselman',
+        fullName: 'Musselman Honda Circuit',
+        location: 'Pima County, Az',
+        lat: 32.0359,
+        lng: -110.7929,
+        straight: 635,
+        turns: 12,
+
+    },
+    {
+        name: 'RA',
+        fullName: 'Road America Motor Plex',
+        location: 'Plymouth, Wi',
+        lat: 43.7985,
+        lng: -87.9987,
+        straight: 461,
+        turns: 12
     },
     {
         name: 'Shasta',
