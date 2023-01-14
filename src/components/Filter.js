@@ -43,7 +43,7 @@ const Filter = () => {
             {anecdotesFiltered.map(race =>
             <div key={Math.random()} className="list_div">
               <li className="filterLI">
-                <span className="raceDate">{dateFunction(race)} </span>
+                <span className="raceDate"><strong>{dateFunction(race)} </strong></span>
                 <span ><img className='filterImage' src={`/img/${race.name}.jpg`} alt=" -" /> </span>
                 <span> {race.name.replace(/_/g,' ')} - </span>
                 <span> {race.track}</span>
