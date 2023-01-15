@@ -18,6 +18,7 @@ const Schedule = () => {
     const handleFilterAll = () => {
         dispatch(manageFilter('AMA_SUPERMOTO'))
         dispatch(manageFilter('Cascadia_Super_Moto'))
+        dispatch(manageFilter('Colorado'))
         dispatch(manageFilter('Puyallup_Flat_Track'))
         dispatch(manageFilter('UTAHSBA_SuperMoto'))
         dispatch(manageFilter('WMRRA'))
@@ -35,6 +36,7 @@ const Schedule = () => {
             <section className="buttonSection">
                 <button style={buttonStyler('AMA_SUPERMOTO')} onClick={() => handleFilter('AMA_SUPERMOTO')}>AMA SUPERMOTO</button>
                 <button style={buttonStyler('Cascadia_Super_Moto')} onClick={() => handleFilter('Cascadia_Super_Moto')}>Cascadia Super Moto</button>
+                <button style={buttonStyler('Colorado')} onClick={() => handleFilter('Colorado')}>Colorado Supermoto</button>
                 <button style={buttonStyler('Puyallup_Flat_Track')} onClick={() => handleFilter('Puyallup_Flat_Track')}>Puyallup Flat Track</button>
                 <button style={buttonStyler('UTAHSBA_SuperMoto')} onClick={() => handleFilter('UTAHSBA_SuperMoto')}>UTAHSBA Super Moto</button>
                 <button style={buttonStyler('WMRRA')} onClick={() => handleFilter('WMRRA')}>WMRRA</button>

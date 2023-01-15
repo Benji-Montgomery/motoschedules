@@ -8,7 +8,6 @@
     border-radius: 5px;
 }
 .filterLI{
-    font-size: 20px;
     /*list-style-image: url('../img/flag-checkered.svg');
     list-style-position: outside;*/
     list-style: none;
@@ -16,7 +15,10 @@
 }
 .filterImage{
     height: 20px;
-    border-radius: 3px;
+    border-radius: 3px; 
+}
+strong{
+    font-size: 18px;
 }
 
 @media (orientation: portrait){

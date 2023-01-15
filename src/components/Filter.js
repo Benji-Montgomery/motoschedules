@@ -4,13 +4,14 @@ import AMA_SUPERMOTO from './orgs/AMA_SUPERMOTO'
 import cascadiaSM from './orgs/cascadia_Super_Moto'
 import puyallup from './orgs/puyallup'
 import UTAHSBA_SuperMoto from './orgs/UTAHSBA_SuperMoto'
+import Colorado from './orgs/Colorado'
 import './css/filter.css'
 import wtd from './orgs/2wtd.js'
 
 const Filter = () => {
     const filtered = useSelector(state => state)
     //These are all the racing orgs
-    let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(puyallup.races.concat(wtd.races.concat(UTAHSBA_SuperMoto.races.concat(AMA_SUPERMOTO.races)))))
+    let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(puyallup.races.concat(wtd.races.concat(UTAHSBA_SuperMoto.races.concat(AMA_SUPERMOTO.races.concat(Colorado.races))))))
     const filterFunction = (x) => {
       for(let i = 0; i < filtered.filter.length; i++){
         if(x.name.includes(filtered.filter[i])){
