@@ -15,7 +15,7 @@ const races = [
     },
     {
         name: name,
-        track: 'Colorado National Speedway',
+        track: 'Colorado National Speedway - Dacono, Co',
         date: [7,9],
         sortDate: .0709
     },
@@ -27,13 +27,13 @@ const races = [
     },
     {
         name: name,
-        track: 'Colorado National Speedway',
+        track: 'Colorado National Speedway - Dacono, Co',
         date: [8,20],
         sortDate: .0813
     },
     {
         name: name,
-        track: 'Grand Junction',
+        track: 'Grand Junction Motor Speedway - Grand Junction, Co',
         date: [9,17],
         sortDate: .0917
     }

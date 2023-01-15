@@ -54,20 +54,20 @@ const markers = [
         turns: 11
     },
     {
-        name: 'Colorado',
+        name: 'CMP',
+        fullName: 'Carolina Motorsports Park',
+        location: 'Kewshaw, Sc',
+        lat: 34.488,
+        lng: -80.596
+    },
+    {
+        name: 'CNS',
         fullName: 'Colorado National Speedway',
         location: 'Dacono, Co',
         lat: 40.0619,
         lng: -104.9734,
         straight: 438
 
-    },
-    {
-        name: 'CMP',
-        fullName: 'Carolina Motorsports Park',
-        location: 'Kewshaw, Sc',
-        lat: 34.488,
-        lng: -80.596
     },
     {
         name: 'Gainesville',
@@ -91,6 +91,14 @@ const markers = [
         location: 'Quebec, Canada',
         lat: 46.3456,
         lng: -72.5566,
+    },
+    {
+        name: 'Junction',
+        fullName: 'Grand Junction Motor Speedway',
+        location: 'Grand Junction, Co',
+        lat: 39.1084,
+        lng: -109.4912,
+        straight: 685
     },
     {
         name: 'Herrin_Compound',
