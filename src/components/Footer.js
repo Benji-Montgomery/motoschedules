@@ -15,6 +15,9 @@ const Footer = () => {
                 <a href='https://www.thefair.com/activities/puyallup-indoor-flat-track/'>Puyallup Flat Track</a>
             </span>
             <span>
+                <a href='https://shastasupermoto.com/'>Shasta Super Moto Club</a>
+            </span>
+            <span>
                 <a href='https://utahsba.com/supermoto/'>UTAHSBA Super Moto</a>
             </span>
             <span>
