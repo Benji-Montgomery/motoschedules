@@ -38,7 +38,7 @@ const Schedule = () => {
             <section className="buttonSection">
                 <button style={buttonStyler('AMA_SUPERMOTO')} onClick={() => handleFilter('AMA_SUPERMOTO')}>AMA SUPERMOTO</button>
                 <button style={buttonStyler('Cascadia_Super_Moto')} onClick={() => handleFilter('Cascadia_Super_Moto')}>Cascadia Super Moto</button>
-                <button style={buttonStyler('Colorado')} onClick={() => handleFilter('Colorado')}>Colorado Supermoto</button>
+                <button style={buttonStyler('Colorado')} onClick={() => handleFilter('Colorado')}>Colorado Super Moto</button>
                 <button style={buttonStyler('NorthWest_Mini_Moto')} onClick={() => handleFilter('NorthWest_Mini_Moto')}>NorthWest Mini Moto</button>
                 <button style={buttonStyler('Puyallup_Flat_Track')} onClick={() => handleFilter('Puyallup_Flat_Track')}>Puyallup Flat Track</button>
                 <button style={buttonStyler('Shasta_SuperMoto_Club')} onClick={() => handleFilter('Shasta_SuperMoto_Club')}>Shasta SuperMoto Club</button>
