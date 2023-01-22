@@ -4,7 +4,8 @@ const markers = [
         fullName: 'Adams Motorsports Park',
         location: 'Riverside, Ca',
         lat: 34.008655,
-        lng: -117.381843
+        lng: -117.381843,
+        clubs: '2WTD mini racing'
     },
     {
         name: 'Affinity',
@@ -13,21 +14,25 @@ const markers = [
         lat: 42.4169,
         lng: -122.8047,
         straight: 726,
-        turns: 14
+        turns: 14,
+        clubs: 'Cascadia Super Moto'
     },
     {
         name: 'Anderson',
         fullName:'Anderson RacePark',
         location: 'Palmetto, Fl',
         lat: 27.6059,
-        lng: -82.5419
+        lng: -82.5419,
+        clubs: 'SFLminiGP'
+
     },
     {
         name: 'Apex',
         fullName: 'Apex Kart Racing',
         location: 'Perris, Ca',
         lat: 33.8538,
-        lng: -117.2032
+        lng: -117.2032,
+        clubs: '2WTD mini racing'
     },
     {
         
@@ -35,14 +40,16 @@ const markers = [
         fullName: 'Bremerton SuperCone Course',
         location: 'Bremerton, Wa',
         lat: 47.492257,
-        lng: -122.754693
+        lng: -122.754693,
+        clubs: 'Cascadia Super Moto'
     },
     {
         name: 'Bushnell',
         fullName: 'Bushnell Motorsports Park',
         location: 'Bushnell, Fl',
         lat: 28.671,
-        lng: -82.149
+        lng: -82.149,
+        clubs: 'SFLminiGP'
     },
     {
         name: 'Cariboo',
@@ -51,14 +58,16 @@ const markers = [
         lat: 52.9903,
         lng: -122.4418,
         straight: 457,
-        turns: 11
+        turns: 11,
+        clubs: 'Pacific Coast Mini Road Racing Club'
     },
     {
         name: 'CMP',
         fullName: 'Carolina Motorsports Park',
         location: 'Kewshaw, Sc',
         lat: 34.488,
-        lng: -80.596
+        lng: -80.596,
+        clubs: 'SFLminiGP'
     },
     {
         name: 'CNS',
@@ -66,15 +75,17 @@ const markers = [
         location: 'Dacono, Co',
         lat: 40.0619,
         lng: -104.9734,
-        straight: 438
-
+        straight: 438,
+        clubs: 'Colorado Super Moto'
     },
     {
         name: 'Gainesville',
         fullName: 'Gainesville Raceway',
         location: 'Gainesville, Fl',
         lat: 29.7574,
-        lng: -82.2718
+        lng: -82.2718,
+        clubs: 'SFLminiGP'
+        
     },
     {
         name: 'GMR',
@@ -83,7 +94,8 @@ const markers = [
         lat: 49.1722,
         lng: -121.9778,
         straight: 662,
-        turns: 17
+        turns: 17,
+        clubs: 'Pacific Coast Mini Road Racing Club'
     },
     {
         name: 'GP3R',
@@ -91,6 +103,7 @@ const markers = [
         location: 'Quebec, Canada',
         lat: 46.3456,
         lng: -72.5566,
+        clubs: 'AMA SUPERMOTO'
     },
     {
         name: 'Junction',
@@ -98,7 +111,8 @@ const markers = [
         location: 'Grand Junction, Co',
         lat: 39.1084,
         lng: -109.4912,
-        straight: 685
+        straight: 685,
+        clubs: 'Colorado Super Moto'
     },
     {
         name: 'Herrin_Compound',
@@ -107,7 +121,8 @@ const markers = [
         lat: 32.4780,
         lng: -83.0291,
         straight: 281,
-        turns: 13
+        turns: 13,
+        clubs: 'SFLminiGP'
     },
     {
         name: 'NNKC',
@@ -116,7 +131,8 @@ const markers = [
         lat: 39.6810,
         lng: -119.8668,
         straight: 580,
-        turns: 11
+        turns: 11,
+        clubs: 'Shasta SuperMoto Club'
     },
     {
         name: 'NOLA',
@@ -132,14 +148,16 @@ const markers = [
         lat: 34.8702,
         lng: -118.2662,
         straight: 819,
-        turns: 8
+        turns: 8,
+        clubs: '2WTD mini racing, AMA SUPERMOTO'
     },
     {
         name: 'IMI',
         fullName: 'IMI Motorsports Complex',
         location: 'Dacono, Co',
         lat: 40.043932,
-        lng: -104.949296
+        lng: -104.949296,
+        clubs: 'Colorado Super Moto'
     },
     {
         name: 'Mac',
@@ -159,6 +177,7 @@ const markers = [
         lng: -110.7929,
         straight: 635,
         turns: 12,
+        clubs: 'AMA SUPERMOTO'
 
     },
     {
@@ -168,7 +187,8 @@ const markers = [
         lat: 43.7985,
         lng: -87.9987,
         straight: 461,
-        turns: 12
+        turns: 12,
+        clubs: 'AMA SUPERMOTO'
     },
     {
         name: 'Shasta',
@@ -178,7 +198,8 @@ const markers = [
         lng: -122.285629,
         straight: 932,
         turns: 13,
-        amenities: 'Porta Potties'
+        amenities: 'Porta Potties',
+        clubs: 'Shasta SuperMoto Club'
     },
     {
         name: 'SKRA',
@@ -188,21 +209,23 @@ const markers = [
         lng: -117.591583,
         straight: 534,
         turns: 11,
-        amenities: 'Bathroom, Limited Electrical Hookups'
+        amenities: 'Bathroom, Limited Electrical Hookups',
+        clubs: 'Cascadia Super Moto'
     },
     {
         name: 'SMKA',
         fullName: 'Santa Maria Kart Track',
         location: 'Santa Maria, Ca',
         lat: 34.8922,
-        lng: -120.464655
+        lng: -120.464655,
     },
     {
         name: 'Sultan',
         fullName: 'Streets of Sultan',
         location: 'Sultan, Wa',
         lat: 47.864050,
-        lng: -121.796850
+        lng: -121.796850,
+        clubs: 'Cascadia Super Moto'
     },
     {   
         name: 'TCKC',
@@ -212,7 +235,8 @@ const markers = [
         lng: -119.347580,
         straight: 608,
         turns: 12,
-        amenities: 'Full Hot Showers, Bathrooms, Running Water, Many Electrical Hookups'
+        amenities: 'Full Hot Showers, Bathrooms, Running Water, Many Electrical Hookups',
+        clubs: 'Cascadia Super Moto, NorthWest Mini Moto'
     },
     { 
         name: 'UMC',
@@ -221,7 +245,8 @@ const markers = [
         lat: 40.584648,
         lng: -112.377699,
         straight: 974,
-        turns: 17
+        turns: 17,
+        clubs: 'UTAHSBA Super Moto'
     }
 
     

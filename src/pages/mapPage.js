@@ -66,6 +66,7 @@ return (
                   <li className='mapLI'>Longest Straightaway: {checker(marker.straight)}ft</li>
                   <li className='mapLI'>Turns: {checker(marker.turns)}</li>
                   <li className='mapLI'>Amenities: {checker(marker.amenities)}</li>
+                  <li className='mapLI'>Racing Clubs: {checker(marker.clubs)}</li>
                 </ul>
               </span>
           </InfoWindow>
