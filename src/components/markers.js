@@ -167,7 +167,8 @@ const markers = [
         lng: -123.170771,
         straight: 660,
         turns: 11,
-        amenities: 'Full Hot Showers, Bathroom, Running water'
+        amenities: 'Full Hot Showers, Bathroom, Running water',
+        clubs: 'NorthWest Mini Moto'
     },
     {
         name: 'Musselman',
