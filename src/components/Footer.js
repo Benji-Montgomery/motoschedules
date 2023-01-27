@@ -15,6 +15,9 @@ const Footer = () => {
                 <a href='https://coloradosupermotoseries.com/'>Colorado Super Moto</a>
             </span>
             <span>
+                <a href='https://northwestminimoto.com/'>NorthWest Mini Moto</a>
+            </span>
+            <span>
                 <a href='https://www.thefair.com/activities/puyallup-indoor-flat-track/'>Puyallup Flat Track</a>
             </span>
             <span>
@@ -23,9 +26,6 @@ const Footer = () => {
             <span>
                 <a href='https://utahsba.com/supermoto/'>UTAHSBA Super Moto</a>
             </span>
-            {/* <span>
-                <a href='https://wmrra.com'>WMRRA</a>
-            </span> */}
             <span>
                 <a href='https://www.2wheelstrackdays.com/mini-racing'>2WTD mini racing</a>
             </span>
