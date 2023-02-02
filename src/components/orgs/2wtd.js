@@ -27,6 +27,12 @@ const races = [
     },
     {
         name: name,
+        track: 'Apple Valley Speedway - Apple Valley, Ca',
+        date: [7,22],
+        sortDate: .0722
+    },
+    {
+        name: name,
         track: 'Horse Thief (Willow Springs) - Rosamond, Ca',
         date: [10,14],
         sortDate: .1014
