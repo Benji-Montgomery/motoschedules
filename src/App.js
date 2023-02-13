@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './pages';
 import SignUp from './pages/signup';
 import Contact from './pages/contact';
-import MapPage from './pages/mapPage'
+import MapPage from './pages/mapPage';
+import Shasta from './pages/schedules/shasta'
 
 function App() {
 return (
@@ -16,6 +17,8 @@ return (
 			<Route path='/contact' element={<Contact/>} />
 			<Route path='/sign-up' element={<SignUp/>} />
     		<Route path='/mapPage' element={<MapPage/>} />
+			<Route path='/Shasta' element={<Shasta/>} />
+
 		</Routes>
 	</Router>
 );
