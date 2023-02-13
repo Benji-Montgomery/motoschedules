@@ -50,6 +50,7 @@ const Filter = () => {
                 <span ><img className='filterImage' src={`/img/${race.name}.jpg`} alt=" -" /> </span>
                 <span> {race.name.replace(/_/g,' ')} - </span>
                 <span> {race.track}</span>
+                <span><a href={race.schedule}> detailed schedule </a> </span>
               </li>
             </div>
               )}
