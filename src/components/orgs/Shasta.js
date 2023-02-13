@@ -6,6 +6,7 @@ const races = [
         track: 'Shasta Kart Klub - Redding, Ca' ,
         date: [3,25,26],
         schedule: 'https://motoschedule.com/shasta.html',
+        scheduleName: 'Detailed Schedule',
         sortDate: .0325
     },
     {
