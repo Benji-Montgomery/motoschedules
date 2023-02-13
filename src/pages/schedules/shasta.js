@@ -3,6 +3,7 @@ export const Shasta = () => {
      
 return(
     <div>
+        wot
         <p>Pricing and Class Information for our upcoming race series with Shasta Supermoto. First Round is March 25th/26th in Redding.</p>
         <p>Open Pro $75/$500 Minimum Purse</p>
         <p>First Class $50/each day</p>
