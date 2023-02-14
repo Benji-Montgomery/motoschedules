@@ -15,7 +15,7 @@ const Footer = () => {
                 <a href='https://coloradosupermotoseries.com/'>Colorado Super Moto</a>
             </span>
             <span>
-                <a href='https://northwestminimoto.com/'>NorthWest Mini Moto</a>
+                <a href='https://www.northwestminimoto.com/'>NorthWest Mini Moto</a>
             </span>
             <span>
                 <a href='https://www.thefair.com/activities/puyallup-indoor-flat-track/'>Puyallup Flat Track</a>
