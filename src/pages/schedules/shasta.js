@@ -41,7 +41,7 @@ return(
         <p>Adult/Youth Mini Up to 112cc 2-stroke single; Up to 230cc (air-cooled) 4-stroke single; Up to 159cc (liquid cooled) 4-stroke single; Unlimited modifications</p>
         <p>+30, +40, +50 Vet SuperMoto Unlimited displacement; Single or twin; Unlimited modifications</p>
         <p>250 Amateur SuperMoto (Minimum age 12) Up to 125cc (liquid-cooled) 2-stroke single; Up to 250cc (air-cooled) 2-stroke single; Up to 300cc (liquid-cooled) 4-stroke single; Up to 40cc (air-cooled) 4-stroke single; Unlimited modifications</p>
-        <p>450 Amateur SuperMoto(Minimum age 14) Up to 250cc (liquid cooled) 2-stroke single; Up to 400cc (air-cooled) 2-stroke single; Up to 450cc (air-cooled) 4-stroke single or twin; Up to 550cc (air-cooled) 4-stroke single; Unlimited modifications</p>
+        <p>450 Amateur SuperMoto(Minimum age 14) Up to 250cc (liquid cooled) 2-stroke single; Up to 400cc (air-cooled) 2-stroke single; Up to 450cc (liquid-cooled) 4-stroke single or twin; Unlimited modifications</p>
         <p>Open Pro SuperMoto (Minimum age 14 – Must be Expert status to race in Open Pro) Open displacement single or twin; Any size wheels allowed; Unlimited modifications</p>
     </div>
 
