@@ -18,6 +18,9 @@ const Footer = () => {
                 <a href='https://www.northwestminimoto.com/'>NorthWest Mini Moto</a>
             </span>
             <span>
+                <a href='https://www.miniracingbc.com'>Pacific Coast Mini Racing</a>
+            </span>
+            <span>
                 <a href='https://www.thefair.com/activities/puyallup-indoor-flat-track/'>Puyallup Flat Track</a>
             </span>
             <span>
