@@ -94,7 +94,7 @@ const MapPage = () => {
 
   return (
     <div id="angry_main">
-      <h3>Map with pins of Supermoto / Minimoto racing tracks</h3>
+      <h3>Map with pins of Supermoto / Minimoto racing tracks!</h3>
       <div className='mainComponent'>
         <div id="map_canvas">
           <LoadScript googleMapsApiKey={KEY}>
