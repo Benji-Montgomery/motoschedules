@@ -221,6 +221,14 @@ const markers = [
         lng: -120.464655,
     },
     {
+        name: 'Strathmore',
+        fullName: 'Strathmore Motorsports Park',
+        location: 'Strathmore, Alberta, Canada',
+        lat: 51.024,
+        lng: -113.355,
+        straight: 529
+    },
+    {
         name: 'Sultan',
         fullName: 'Streets of Sultan',
         location: 'Sultan, Wa',
