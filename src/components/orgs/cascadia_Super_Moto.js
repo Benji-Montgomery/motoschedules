@@ -21,12 +21,6 @@ const races = [
     },
     {
         name: name,
-        track: 'Streets of Sultan - Sultan, Wa',
-        date: [7,22],
-        sortDate: .0722
-    },
-    {
-        name: name,
         track: 'Bremerton - Bremerton, Wa',
         date: [8,13],
         sortDate: .0813
