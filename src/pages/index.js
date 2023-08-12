@@ -17,8 +17,8 @@ return (
 			<span>
 				<DateTime />
 			</span>
-			<p>It is hard to find all of the Super Moto racing schedules in one place. This is my solution.</p>
-			<p>All dates are 2023</p>
+			<p>It is hard to find all of the Super Moto and Mini Moto racing schedules in one place. This is my solution.</p>
+			<p>All dates are 2023 - 2024</p>
 			<Schedule />
 		</section>
 		<section>
