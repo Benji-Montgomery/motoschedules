@@ -8,8 +8,8 @@ const races = [
         sortDate: .1014
     },
     {
-        name: name,
-        track: 'Elma Indoor Flattrack - Elma, Wa' ,
+        name: 'Elma Indoor Flattrack',
+        track: 'Greys Harbor Fairgrounds - Elma, Wa' ,
         date: [10,27,29],
         sortDate: .1027
     },  
@@ -26,8 +26,8 @@ const races = [
         sortDate: .1118
     },    
     {
-        name: name,
-        track: 'Elma Indoor Flattrack - Elma, Wa' ,
+        name: 'Elma Indoor Flattrack',
+        track: 'Greys Harbor Fairgrounds - Elma, Wa' ,
         date: [12,8,10],
         sortDate: .1208
     },  
