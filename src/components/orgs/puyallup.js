@@ -6,7 +6,13 @@ const races = [
         track: 'Washington State Fairgrounds - Puyallup, Wa' ,
         date: [10,14],
         sortDate: .1014
-    },    
+    },
+    {
+        name: name,
+        track: 'Elma Indoor Flattrack - Elma, Wa' ,
+        date: [10,27,29],
+        sortDate: .1027
+    },  
     {
         name: name,
         track: 'Washington State Fairgrounds - Puyallup, Wa' ,
@@ -18,7 +24,13 @@ const races = [
         track: 'Washington State Fairgrounds - Puyallup, Wa' ,
         date: [11,18],
         sortDate: .1118
-    },
+    },    
+    {
+        name: name,
+        track: 'Elma Indoor Flattrack - Elma, Wa' ,
+        date: [12,8,10],
+        sortDate: .1208
+    },  
     {
         name: name,
         track: 'Washington State Fairgrounds - Puyallup, Wa' ,
