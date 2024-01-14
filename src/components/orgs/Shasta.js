@@ -4,40 +4,40 @@ const races = [
     {
         name: name,
         track: 'Shasta Kart Klub - Redding, Ca' ,
-        date: [3,24,26],
+        date: [3,2,3],
         schedule: '/Shasta',
         scheduleName: 'Detailed Schedule',
-        sortDate: .0325
+        sortDate: .0302
     },
     {
         name: name,
         track: 'Shasta Kart Klub - Redding, Ca',
-        date: [4,14,16],
-        sortDate: .0415
+        date: [4,6,7],
+        sortDate: .0406
     },
     {
         name: name,
         track: 'Shasta Kart Klub - Redding, Ca',
-        date: [5,5,7],
-        sortDate: .0506
+        date: [6,8,9],
+        sortDate: .0608
     },
     {
         name: name,
         track: 'Desert Park Raceway - Reno, Nv',
-        date: [5,27,28],
-        sortDate: .0527
+        date: [7,6,7],
+        sortDate: .0706
     },
     {
         name: name,
         track: 'Desert Park Raceway - Reno, Nv',
-        date: [6,24,25],
-        sortDate: .0624
+        date: [8,17,18],
+        sortDate: .0817
     },
     {
         name: name,
         track: 'Desert Park Raceway - Reno, Nv',
-        date: [7,22,23],
-        sortDate: .0722
+        date: [10,5,6],
+        sortDate: .1005
     }
 ]
 const exportRaces = {

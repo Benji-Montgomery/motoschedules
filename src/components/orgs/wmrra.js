@@ -4,38 +4,44 @@ const races = [
     {
         name: name,
         track: 'PIR - Portland, Or' ,
-        date: [5,5,7],
-        sortDate: .0505
-    },
-    {
-        name: name,
-        track: 'PIR (chicane)- Portland, Or',
-        date: [6,9,11],
-        sortDate: .0609
+        date: [4,19,21],
+        sortDate: .0419
     },
     {
         name: name,
         track: 'the Ridge - Shelton, Wa',
-        date: [6,16,18],
-        sortDate: .0616
+        date: [5,3,5],
+        sortDate: .0503
     },
     {
         name: name,
-        track: 'PIR (chicane) - Portland, Or',
-        date: [7,14,16],
-        sortDate: .0714
+        track: 'PIR - Portland, Or',
+        date: [6,7,9],
+        sortDate: .0607
+    },
+    {
+        name: name,
+        track: 'the Ridge - Shelton, Wa',
+        date: [7,26,28],
+        sortDate: .0726
     },
     {
         name: name,
         track: 'Pacific - Kent, Wa',
-        date: [9,1,4],
-        sortDate: .0901
+        date: [8,16,18],
+        sortDate: .0816
     },
     {
         name: name,
-        track: 'the Ridge - Shelton, Wa',
-        date: [9,15,17],
-        sortDate: .0915
+        track: 'PIR - Portland, Or',
+        date: [9,6,8],
+        sortDate: .0906
+    },
+    {
+        name: name,
+        track: 'Pacific - Kent, Wa',
+        date: [9,20,22],
+        sortDate: .0920
     }
 ]
 const exportRaces = {

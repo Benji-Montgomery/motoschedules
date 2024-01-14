@@ -3,33 +3,33 @@ const name = 'Cascadia_Super_Moto'
 const races = [
     {
         name: name,
-        track: 'TCKC - Richland, Wa' ,
-        date: [6,3],
-        sortDate: .0603
+        track: 'Affinity Circuit - Medford, Or' ,
+        date: [4,27,28],
+        sortDate: .0427
     },
     {
         name: name,
         track: 'Spokane Kart Racing Association - Spokane, Wa',
-        date: [6,17,18],
-        sortDate: .0617
+        date: [6,15,16],
+        sortDate: .0615
     },
     {
         name: name,
-        track: 'Affinity Circuit - Medford, Or',
-        date: [7,16],
-        sortDate: .0716
+        track: 'Spokane Kart Racing Association - Spokane, Wa',
+        date: [8,10,11],
+        sortDate: .0810
     },
     {
         name: name,
-        track: 'Bremerton - Bremerton, Wa',
-        date: [8,13],
-        sortDate: .0813
+        track: 'TCKC (Double Header) - Richland, Wa',
+        date: [8,31,32],
+        sortDate: .0831
     },
     {
         name: name,
-        track: 'TCKC - Richland, Wa',
-        date: [9,2,3],
-        sortDate: .0902
+        track: 'Spokane Kart Racing Association (Awards) - Spokane, Wa',
+        date: [9,21,22],
+        sortDate: .0921
     }
 ]
 const exportRaces = {
