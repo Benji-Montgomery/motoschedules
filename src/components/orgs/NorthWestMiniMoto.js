@@ -22,7 +22,7 @@ const races = [
     {
         name: name,
         track: 'Mac Track (Sprints/special)- McMinnville, Or',
-        date: ['8,31,32'],
+        date: [8,31,32],
         sortDate: .0831
     },
     {

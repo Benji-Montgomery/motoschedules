@@ -23,19 +23,19 @@ const races = [
     },
     {
         name: name,
-        track: 'Desert Park Raceway - Reno, Nv',
+        track: 'Shasta Kart Klub - Redding, Ca',
         date: [7,6,7],
         sortDate: .0706
     },
     {
         name: name,
-        track: 'Desert Park Raceway - Reno, Nv',
+        track: 'Shasta Kart Klub - Redding, Ca',
         date: [8,17,18],
         sortDate: .0817
     },
     {
         name: name,
-        track: 'Desert Park Raceway - Reno, Nv',
+        track: 'Shasta Kart Klub - Redding, Ca',
         date: [10,5,6],
         sortDate: .1005
     }
