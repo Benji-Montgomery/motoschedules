@@ -5,8 +5,6 @@ const races = [
         name: name,
         track: 'Desert Park Raceway - Reno, Nv' ,
         date: [3,2,3],
-        schedule: '/Shasta',
-        scheduleName: 'Detailed Schedule',
         sortDate: .0302
     },
     {
