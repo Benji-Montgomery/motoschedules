@@ -4,26 +4,26 @@ const races = [
     {
         name: name,
         track: 'Mission Raceway Park - British Columbia, CAN' ,
-        date: [7,14,16],
-        sortDate: .0714
+        date: [5,10,12],
+        sortDate: .0510
     },
     {
         name: name,
         track: 'Mission Raceway Park - British Columbia, CAN',
-        date: [8,11,13],
-        sortDate: .0811
+        date: [7,5,7],
+        sortDate: .0705
     },
     {
         name: name,
         track: 'Mission Raceway Park - British Columbia, CAN',
-        date: [9,1,4],
-        sortDate: .0901
+        date: [8,30,32],
+        sortDate: .0830
     },
     {
         name: name,
         track: 'Mission Raceway Park - British Columbia, CAN',
-        date: [10,13,15],
-        sortDate: .1013
+        date: [10,11,13],
+        sortDate: .1011
     }
 ]
 const exportRaces = {
