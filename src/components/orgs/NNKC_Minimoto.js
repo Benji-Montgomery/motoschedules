@@ -4,26 +4,26 @@ const races = [
     {
         name: name,
         track: 'Desert Park Raceway - Reno, Nv' ,
-        date: [3,2,3],
-        sortDate: .0302
+        date: [5,12],
+        sortDate: .0512
     },
     {
         name: name,
         track: 'Desert Park Raceway - Reno, Nv',
-        date: [4,6,7],
-        sortDate: .0406
+        date: [8,11],
+        sortDate: .0811
     },
     {
         name: name,
         track: 'Desert Park Raceway - Reno, Nv',
-        date: [6,8,9],
-        sortDate: .0608
+        date: [9,1],
+        sortDate: .0901
     },
     {
         name: name,
         track: 'Desert Park Raceway - Reno, Nv',
-        date: [7,6,7],
-        sortDate: .0706
+        date: [10,27],
+        sortDate: .1027
     },
 ]
 const exportRaces = {
