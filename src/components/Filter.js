@@ -12,13 +12,13 @@ import Shasta from './orgs/Shasta'
 import PCMRC from './orgs/PCMRC'
 import WMRC from './orgs/WMRC'
 import NNKC_Minimoto from './orgs/NNKC_Minimoto.js'
-import snmc from './orgs/snmc.js'
+import Sierra_Nevada_Moto_Championship from './orgs/snmc.js'
 
 
 const Filter = () => {
     const filtered = useSelector(state => state)
     //These are all the racing orgs
-    let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(NNKC_Minimoto.races.concat(wtd.races.concat(UTAHSBA_SuperMoto.races.concat(AMA_SUPERMOTO.races.concat(Colorado.races.concat(NWMM.races.concat(Shasta.races.concat(PCMRC.races.concat(WMRC.races.concat(AMRA.races.concat(snmc.races))))))))))))
+    let anecdotes = wmrra.races.concat(cascadiaSM.races.concat(NNKC_Minimoto.races.concat(wtd.races.concat(UTAHSBA_SuperMoto.races.concat(AMA_SUPERMOTO.races.concat(Colorado.races.concat(NWMM.races.concat(Shasta.races.concat(PCMRC.races.concat(WMRC.races.concat(AMRA.races.concat(Sierra_Nevada_Moto_Championship.races))))))))))))
     const filterFunction = (x) => {
       for(let i = 0; i < filtered.filter.length; i++){
         if(x.name.includes(filtered.filter[i])){
