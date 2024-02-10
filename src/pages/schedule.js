@@ -22,6 +22,7 @@ const Schedule = () => {
         dispatch(manageFilter('Colorado'))
         dispatch(manageFilter('NorthWest_Mini_Moto'))
         dispatch(manageFilter('PCMRC'))
+        dispatch(manageFilter('snmc'))
         dispatch(manageFilter('NNKC_Minimoto'))
         dispatch(manageFilter('Shasta_SuperMoto_Club'))
         dispatch(manageFilter('UTAHSBA_SuperMoto'))
@@ -47,6 +48,7 @@ const Schedule = () => {
                 <button style={buttonStyler('NorthWest_Mini_Moto')} onClick={() => handleFilter('NorthWest_Mini_Moto')}>NorthWest Mini Moto</button>
                 <button style={buttonStyler('PCMRC')} onClick={() => handleFilter('PCMRC')}>Pacific Coast Mini Racing</button>
                 <button style={buttonStyler('Shasta_SuperMoto_Club')} onClick={() => handleFilter('Shasta_SuperMoto_Club')}>Shasta SuperMoto Club</button>
+                <button style={buttonStyler('SNMC')} onClick={() => handleFilter('snmc')}>Sierra Navada Moto Championship</button>
                 <button style={buttonStyler('UTAHSBA_SuperMoto')} onClick={() => handleFilter('UTAHSBA_SuperMoto')}>UTAHSBA Super Moto</button>
                 <button style={buttonStyler('WMRC')} onClick={() => handleFilter('WMRC')}>WMRC</button>
                 <button style={buttonStyler('WMRRA')} onClick={() => handleFilter('WMRRA')}>WMRRA</button>
