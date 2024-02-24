@@ -1,30 +1,30 @@
 const name = 'AMRA'
 
 const races = [
-    // {
-    //     name: name,
-    //     track: 'Strathmore Motorsports Park, Strathmore, AB, Canada' ,
-    //     date: [6,9,11],
-    //     sortDate: .0609
-    // },
-    // {
-    //     name: name,
-    //     track: 'Strathmore Motorsports Park, Strathmore, AB, Canada',
-    //     date: [6,30,72],
-    //     sortDate: .0630
-    // },
-    // {
-    //     name: name,
-    //     track: 'Strathmore Motorsports Park, Strathmore, AB, Canada',
-    //     date: [8,4,5],
-    //     sortDate: .0804
-    // },
-    // {
-    //     name: name,
-    //     track: 'Strathmore Motorsports Park, Strathmore, AB, Canada',
-    //     date: [8,25,27],
-    //     sortDate: .0825
-    // }
+     {
+         name: name,
+         track: '(Endurance) Strathmore Motorsports Park, Strathmore, AB, Canada' ,
+         date: [5,5],
+         sortDate: .0505
+     },
+     {
+         name: name,
+         track: 'Strathmore Motorsports Park, Strathmore, AB, Canada',
+         date: [6,28,30],
+         sortDate: .0628
+     },
+     {
+         name: name,
+         track: 'Strathmore Motorsports Park, Strathmore, AB, Canada',
+         date: [7,26,28],
+         sortDate: .0726
+     },
+     {
+         name: name,
+         track: 'Strathmore Motorsports Park, Strathmore, AB, Canada',
+         date: [8,30,1],
+         sortDate: .0830
+     }
 ]
 const exportRaces = {
     races, name
