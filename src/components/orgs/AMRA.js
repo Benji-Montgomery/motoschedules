@@ -24,7 +24,13 @@ const races = [
          track: 'Strathmore Motorsports Park, Strathmore, AB, Canada',
          date: [8,30,1],
          sortDate: .0830
-     }
+     },
+     {
+        name: name,
+        track: '(Endurance) Strathmore Motorsports Park, Strathmore, AB, Canada',
+        date: [9,21],
+        sortDate: .0921
+    }
 ]
 const exportRaces = {
     races, name
