@@ -10,7 +10,7 @@ const Home = () => {
 return (
 	<div>
 		<section>
-			<img src="/img/sumo.webp" alt="supermoto" id="splashImg"></img>
+			<img src="/img/sumo2.webp" alt="supermoto" id="splashImg"></img>
 		</section>
 		<section id="main">
 			<h1 className='headLine'>Moto Schedule</h1>
