@@ -4,10 +4,10 @@ const races = [
     {
         name: name,
         track: 'Shasta Kart Klub - Redding, Ca' ,
-        date: [3,2,3],
+        date: [7,27,28],
         schedule: '/Shasta',
         scheduleName: 'Detailed Schedule',
-        sortDate: .0302
+        sortDate: .0727
     },
     {
         name: name,
