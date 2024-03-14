@@ -3,20 +3,20 @@ const name = 'Cascadia_Super_Moto'
 const races = [
     {
         name: name,
-        track: 'Affinity Circuit - Medford, Or' ,
-        date: [4,27,28],
-        sortDate: .0427
+        track: 'TCKC - Richland, Wa' ,
+        date: [4,28],
+        sortDate: .0428
     },
     {
         name: name,
         track: 'Spokane Kart Racing Association - Spokane, Wa',
-        date: [6,15,16],
+        date: [6,16],
         sortDate: .0615
     },
     {
         name: name,
         track: 'Spokane Kart Racing Association - Spokane, Wa',
-        date: [8,10,11],
+        date: [8,11],
         sortDate: .0810
     },
     {
